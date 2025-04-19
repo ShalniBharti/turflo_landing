@@ -198,14 +198,12 @@ const Contact = ({ id }: ContactProps) => {
 
             {/* Mobile Footer Bottom (below 640px) */}
             <div className="px-[8%] pb-[43px] sm:hidden">
-              <div className='flex items-center space-x-4'>
-                <h6 className="text-[16px] font-semibold pb-[19px] leading-6">Follow Us :</h6>
-                <div className="flex items-center space-x-4  mb-3">
-                  <img src={Twitter} alt="Twitter" className="h-[32px] w-[32px]" />
-                  <img src={Facebook} alt="Facebook" className="h-[32px] w-[32px]" />
-                  <img src={Instagram} alt="Instagram" className="h-[32px] w-[32px]" />
-                  <img src={Linkdin} alt="Linkdin" className="h-[32px] w-[32px]" />
-                </div>
+              <h6 className="text-[16px] font-semibold pb-[19px] leading-6">Follow Us :</h6>
+              <div className="flex items-center space-x-4 mb-3">
+                <img src={Twitter} alt="Twitter" className="h-[32px] w-[32px]" />
+                <img src={Facebook} alt="Facebook" className="h-[32px] w-[32px]" />
+                <img src={Instagram} alt="Instagram" className="h-[32px] w-[32px]" />
+                <img src={Linkdin} alt="Linkdin" className="h-[32px] w-[32px]" />
               </div>
               <h6 className="text-[16px] font-semibold text-[#FFFFFF] mt-[40px]">Mail :</h6>
               <p className="text-[14px] font-semibold text-[#FFFFFF] mt-[13px]">support@turflo.in, info@turflo.in</p>

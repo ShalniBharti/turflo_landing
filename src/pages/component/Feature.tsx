@@ -3,7 +3,7 @@ import { Games, Player, Communities } from '../../components/icons/index';
 const Feature = () => {
   return (
     <div className="bg-[#1C1C1C] text-[#FFFFFF] px-4 py-[70px] md:py-[110px] lg:py-[90px]">
-      <div className="container mx-auto text-center">
+      <div className="container mx-auto text-center px-4">
         <h2 className="text-[28px] font-spartan md:text-[30px] lg:text-[32px] xl:text-[36px] font-bold leading-[120%] pb-[15px] lg:pb-[45px]">
           We help you build your own sports community.
         </h2>

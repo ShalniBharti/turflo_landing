@@ -17,7 +17,7 @@ const About = ({ id }: AboutProps) => {
           style={{ backgroundImage: `url(${HeroImg})` }}
         />
 
-        <div className="container mx-auto flex flex-col items-center md:flex-row md:flex-wrap md:justify-center md:items-center xl:flex-nowrap xl:justify-center xl:items-center xl:max-w-7xl z-20 my-[54px] md:my-[72px] xl:my-[52px] xl:pb-[87px]">
+        <div className="container mx-auto flex flex-col items-center md:flex-row md:flex-wrap md:justify-center md:items-center xl:flex-nowrap xl:justify-center xl:items-center xl:max-w-7xl z-20 my-[54px] md:my-[72px] xl:my-[52px] xl:pb-[87px] px-4">
           <div className="text-[#FFFFFF] mt-[54px] md:mt-0 xl:mt-0 text-center mx-auto md:text-right md:mr-[66px] md:flex-1 xl:mr-[75px]">
             <h1 className="text-[56px] font-gothic font-semibold mb-[22px] leading-[130%] uppercase 
                md:text-[75px] 
@@ -45,8 +45,7 @@ const About = ({ id }: AboutProps) => {
             </p>
           </div>
 
-          <
-            div className="relative z-20 md:flex-shrink-0 md:m-[10px] lg:mt-[36px] xl:mt-[84px]">
+          <div className="relative z-20 mt-[32px] md:flex-shrink-0 md:m-[10px] lg:mt-[36px] xl:mt-[84px]">
             <img src={Phone} alt="Phone" className="w-[300px] md:w-[300px] lg:w-[350px] h-auto" />
           </div>
 
