@@ -19,7 +19,7 @@ function ProfileCard({ name, age, sport, description, rating }: ProfileCardProps
                 </div>
             </div>
             <p className="text-[#FFF] text-[12px] mb-2">{`M • ${age} • ${sport}`}</p>
-            <p className="text-white opacity-70 text-[10px] leading-[12px] h-[60px] overflow-hidden overflow-ellipsis">
+            <p className="text-white opacity-70 text-[10px] leading-[12px] h-[60px] overflow-hidden">
                 {description}
             </p>
         </div>
