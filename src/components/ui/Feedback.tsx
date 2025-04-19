@@ -10,7 +10,7 @@ interface ProfileCardProps {
 
 function ProfileCard({ name, age, sport, description, rating }: ProfileCardProps) {
     return (
-        <div className="border font-metropolis border-[#BCBCBC] rounded-[15px] py-[10px] px-[13px] h-[166px]">
+        <div className="border font-metropolis border-[#BCBCBC] rounded-[15px] py-[10px] px-[13px] h-[166px] w-[316px]">
             <div className="flex justify-between items-center mb-2">
                 <h2 className="text-[#FFF] text-[19px] font-semibold">{name}</h2>
                 <div className="flex items-center">
@@ -19,7 +19,9 @@ function ProfileCard({ name, age, sport, description, rating }: ProfileCardProps
                 </div>
             </div>
             <p className="text-[#FFF] text-[12px] mb-2">{`M • ${age} • ${sport}`}</p>
-            <p className="text-white opacity-70 text-[10px] leading-[12px]">{description}</p>
+            <p className="text-white opacity-70 text-[10px] leading-[12px] h-[60px] overflow-hidden overflow-ellipsis">
+                {description}
+            </p>
         </div>
     );
 }

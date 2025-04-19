@@ -1,0 +1,63 @@
+.scroll-row {
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .scroll-content {
+    display: inline-flex;
+    animation: scroll-left linear infinite;
+  }
+  
+  .scroll-row-1 .scroll-content {
+    animation-duration: 30s;
+  }
+  
+  .scroll-row-2 .scroll-content {
+    animation-duration: 38s;
+  }
+  
+  .feedback-item {
+    display: inline-block;
+    width: 316px;
+    margin-right: 24px;
+    flex-shrink: 0;
+  }
+  
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  @keyframes scroll-right {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .scroll-row-1 .scroll-content {
+    animation: scroll-left linear infinite;
+    animation-duration: 30s;
+  }
+  
+  .scroll-row-2 .scroll-content {
+    animation: scroll-right linear infinite;
+    animation-duration: 38s;
+  }
+  
+  .scroll-content {
+    display: inline-flex;
+    white-space: nowrap;
+    padding: 0 10px;
+    animation: scroll-left linear infinite;
+  }
+  
+
+  
+  
