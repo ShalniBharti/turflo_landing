@@ -1,12 +1,14 @@
 .scroll-row {
-    overflow: hidden;
-    width: 100%;
-  }
-  
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+}
+
   .scroll-content {
     display: inline-flex;
+    padding: 0 10px;
     animation: scroll-left linear infinite;
-  }
+}
   
   .scroll-row-1 .scroll-content {
     animation-duration: 30s;
@@ -16,13 +18,15 @@
     animation-duration: 38s;
   }
   
+
   .feedback-item {
     display: inline-block;
     width: 316px;
     margin-right: 24px;
     flex-shrink: 0;
-  }
-  
+    white-space: normal;
+}
+
   @keyframes scroll-left {
     0% {
       transform: translateX(0);
