@@ -19,7 +19,7 @@ const About = ({ id }: AboutProps) => {
 
         <div className="container mx-auto flex flex-col items-center md:flex-row md:flex-wrap md:justify-center md:items-center xl:flex-nowrap xl:justify-center xl:items-center xl:max-w-7xl z-20 my-[54px] md:my-[72px] xl:my-[52px] xl:pb-[87px]">
           <div className="text-[#FFFFFF] mt-[54px] md:mt-0 xl:mt-0 text-center mx-auto md:text-right md:mr-[66px] md:flex-1 xl:mr-[75px]">
-            <h1 className="text-[56px] font-gothic font-semibold mb-[22px] leading-[87px] uppercase 
+            <h1 className="text-[56px] font-gothic font-semibold mb-[22px] leading-[130%] uppercase 
                md:text-[75px] 
                lg:text-[86px] 
                xl:text-[106px]">
