@@ -3,14 +3,103 @@ import Instagram from '../../assets/icons/Instagram-B.png';
 import Linkdin from '../../assets/icons/Linkdin-B.png';
 import Twitter from '../../assets/icons/Twitter-B.png';
 import Logo from '../../../public/turflo-logo.png';
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 interface ContactProps {
   id?: string;
 }
 
 const Contact = ({ id }: ContactProps) => {
+  const navigate = useNavigate();
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: ''
+  });
+  const [errors, setErrors] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: ''
+  });
+  const [showSuccess, setShowSuccess] = useState(false);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+    // Clear error when user types
+    if (errors[name as keyof typeof errors]) {
+      setErrors(prev => ({ ...prev, [name]: '' }));
+    }
+  };
+
+  const validateForm = () => {
+    let valid = true;
+    const newErrors = { ...errors };
+
+    // Name validation
+    if (!formData.name.trim()) {
+      newErrors.name = 'Name is required';
+      valid = false;
+    }
+
+    // Email validation
+    if (!formData.email.trim()) {
+      newErrors.email = 'Email is required';
+      valid = false;
+    } else if (!/^\S+@\S+\.\S+$/.test(formData.email)) {
+      newErrors.email = 'Email is invalid';
+      valid = false;
+    }
+
+    // Phone validation (only if provided)
+    if (formData.phone && (formData.phone.startsWith('0') || formData.phone.length !== 10)) {
+      newErrors.phone = 'Phone must be 10 digits and not start with 0';
+      valid = false;
+    }
+
+    // Message validation
+    if (!formData.message.trim()) {
+      newErrors.message = 'Message is required';
+      valid = false;
+    }
+
+    setErrors(newErrors);
+    return valid;
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (validateForm()) {
+      // Form is valid, show success and reset
+      setShowSuccess(true);
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        message: ''
+      });
+
+      // Redirect after 3 seconds
+      setTimeout(() => {
+        setShowSuccess(false);
+        navigate('/');
+      }, 2000);
+    }
+  }
+
   return (
     <section id={id}>
+      {showSuccess && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white p-6 rounded-lg max-w-md mx-4">
+            <h3 className="text-xl font-bold mb-4 text-center font-quicksand">Thank you!</h3>
+            <p className="text-center font-spartan">Thanks for contacting us. We will get back to you soon.</p>
+          </div>
+        </div>
+      )}
       <div className="bg-[#18181B] font-spartan text-white border-b border-[#FFFFFF]">
 
         <div className="flex justify-center items-center pt-[28px]">
@@ -22,36 +111,49 @@ const Contact = ({ id }: ContactProps) => {
             {/* Mobile Layout (below 640px) */}
             <div className="max-w-[340px] mx-auto lg:hidden">
               <h6 className="text-[32px] text-center text-[#FF7018] font-semibold mb-4">Contact Us</h6>
-              <form>
+              <form onSubmit={handleSubmit}>
                 <div className="mb-4">
                   <input
                     type="text"
-                    className="border border-[#9CA3AF] rounded-[10px] py-[15px] px-[27px] w-full text-[#9CA3AF] focus:outline-none focus:border-white"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    className={`border ${errors.name ? 'border-red-500' : 'border-[#9CA3AF]'} rounded-[10px] py-[15px] px-[27px] w-full text-[#9CA3AF] focus:outline-none focus:border-white`}
                     placeholder="Full Name (Required)"
-                    required
                   />
+                  {errors.name && <p className="text-red-500 text-xs mt-1">{errors.name}</p>}
                 </div>
                 <div className="mb-4">
                   <input
                     type="email"
-                    className="border border-[#9CA3AF] rounded-[10px] py-[15px] px-[27px] w-full text-[#9CA3AF] focus:outline-none focus:border-white"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    className={`border ${errors.email ? 'border-red-500' : 'border-[#9CA3AF]'} rounded-[10px] py-[15px] px-[27px] w-full text-[#9CA3AF] focus:outline-none focus:border-white`}
                     placeholder="Email Address (Required)"
-                    required
                   />
+                  {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email}</p>}
                 </div>
                 <div className="mb-4">
                   <input
                     type="tel"
-                    className="border border-[#9CA3AF] rounded-[10px] py-[15px] px-[27px] w-full text-[#9CA3AF] focus:outline-none focus:border-white"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    className={`border ${errors.phone ? 'border-red-500' : 'border-[#9CA3AF]'} rounded-[10px] py-[15px] px-[27px] w-full text-[#9CA3AF] focus:outline-none focus:border-white`}
                     placeholder="Phone Number"
                   />
+                  {errors.phone && <p className="text-red-500 text-xs mt-1">{errors.phone}</p>}
                 </div>
                 <div className="mb-4">
                   <textarea
-                    className="border border-[#9CA3AF] rounded-[10px] py-[15px] px-[27px] w-full h-[93px] text-[#9CA3AF] focus:outline-none focus:border-white"
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    className={`border ${errors.message ? 'border-red-500' : 'border-[#9CA3AF]'} rounded-[10px] py-[15px] px-[27px] w-full h-[93px] text-[#9CA3AF] focus:outline-none focus:border-white`}
                     placeholder="Message / Inquiry Details (Required)"
-                    required
                   ></textarea>
+                  {errors.message && <p className="text-red-500 text-xs mt-1">{errors.message}</p>}
                 </div>
                 <div className="flex justify-center">
                   <button
@@ -214,5 +316,6 @@ const Contact = ({ id }: ContactProps) => {
     </section>
   );
 };
+
 
 export default Contact;
