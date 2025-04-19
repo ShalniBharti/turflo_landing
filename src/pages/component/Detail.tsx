@@ -110,7 +110,7 @@ const Detail = () => {
 
                     {/* Footer */}
                     <div className="absolute bottom-0 left-0 w-full h-[67px] bg-[#FF7018] items-center justify-center sm:flex hidden">
-                        <p className="font-normal font-gothic text-[36px] lg:text-[40px] xl:text-[45px] text-center text-white">PLAY WITH TURFLO!</p>
+                        <p className="font-normal font-gothic text-[36px] lg:text-[40px] xl:text-[45px] text-center text-[#1E293B]">PLAY WITH TURFLO!</p>
                     </div>
                 </div>
             </div>
