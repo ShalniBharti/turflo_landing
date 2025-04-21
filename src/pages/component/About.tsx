@@ -17,12 +17,12 @@ const About = ({ id }: AboutProps) => {
           style={{ backgroundImage: `url(${HeroImg})` }}
         />
 
-        <div className="container mx-auto flex flex-col items-center md:flex-row md:flex-wrap md:justify-center md:items-center xl:flex-nowrap xl:justify-center xl:items-center xl:max-w-7xl z-20 my-[54px] md:my-[72px] xl:my-[52px] xl:pb-[87px] px-4">
+        <div className="container mx-auto flex flex-col items-center md:flex-row md:flex-wrap md:justify-center md:items-center xl:flex-nowrap xl:justify-center xl:items-center xl:max-w-[1024px] z-20 px-4">
           <div className="text-[#FFFFFF] mt-[54px] md:mt-0 xl:mt-0 text-center mx-auto md:text-right md:mr-[66px] md:flex-1 xl:mr-[75px]">
-            <h1 className="text-[56px] font-gothic font-semibold mb-[22px] leading-[130%] uppercase 
-               md:text-[75px] 
-               lg:text-[86px] 
-               xl:text-[106px]">
+            <h1 className="text-[54px] font-gothic mb-[22px] leading-[110%] uppercase
+                  md:text-[75px]
+                  lg:text-[86px]
+                  xl:text-[106px]">
               <span className="block md:hidden">
                 NO SQUAD? NO SWEAT.<br />
                 WE'LL FIND YOU ONE.
@@ -35,39 +35,39 @@ const About = ({ id }: AboutProps) => {
               </span>
             </h1>
 
-            <p className="text-[14px] font-quicksand leading-[140%] mx-auto md:mx-0 
-              md:text-[16px] 
-              lg:text-[22px] 
-              xl:text-[18px]">
-              Hosting a match or just vibin' for a quick game?
-              Turflo's the plug. No calls. No flaky DMs.
+            <p className="text-[14px] font-quicksand leading-[26px] mx-auto md:mx-0
+                  md:text-[16px]
+                  lg:text-[22px]
+                  xl:text-[18px]">
+              Hosting a match or just vibin' for a quick <br/>
+              game? Turflo's the plug. No calls. No flaky DMs.<br/>
               Just show up and play.
             </p>
           </div>
 
-          <div className="relative z-20 mt-[32px] md:flex-shrink-0 md:m-[10px] lg:mt-[36px] xl:mt-[84px]">
-            <img src={Phone} alt="Phone" className="w-[300px] md:w-[300px] lg:w-[350px] h-auto" />
+          <div className="relative z-20 md:flex-shrink-0">
+            <img src={Phone} alt="Phone" className="w-[277px] h-[535px]" />
           </div>
 
           <div className="flex flex-row gap-4 justify-center mx-auto pt-[20px] md:w-full md:justify-center md:mt-8 md:pb-8 xl:w-auto xl:flex-shrink-0 xl:ml-[36px] xl:mt-[52px] xl:pt-0 xl:pb-0">
             <div className="flex flex-row gap-4 justify-center xl:flex-col xl:gap-6">
-              <a href="#" className="bg-white flex items-center gap-3 rounded-full border-2 border-[#0295B0] px-4 py-2">
+              <a href="#" className="bg-white h-[75px] flex items-center gap-3 rounded-full border-2 border-[#0295B0] px-[26px] py-[12px]">
                 <div className="flex-shrink-0">
-                  <img src={AppStore} alt="App Store" className="w-8 h-8" />
+                  <img src={AppStore} alt="App Store" className="w-[40px] h-[40px]" />
                 </div>
-                <div>
-                  <p className="text-xs font-quicksand">Download Now from</p>
-                  <p className="text-sm text-[#1E293B] font-bold pl-2 font-spartan">APP STORE</p>
+                <div className='pr-[16px]'>
+                  <p className="text-[14px] font-quicksand">Download Now from</p>
+                  <p className="text-[24px] text-[#1E293B] font-bold pl-2 font-spartan">APP STORE</p>
                 </div>
               </a>
 
-              <a href="#" className="bg-white flex items-center gap-3 rounded-full border-2 border-[#0295B0] px-4 py-2">
+              <a href="#" className="bg-white h-[75px] flex items-center gap-3 rounded-full border-2 border-[#0295B0] px-[26px] py-[12px]">
                 <div className="flex-shrink-0">
-                  <img src={PlayStore} alt="Play Store" className="w-8 h-8" />
+                  <img src={PlayStore} alt="Play Store" className="w-[40px] h-[40px]" />
                 </div>
-                <div>
-                  <p className="text-xs font-quicksand">Download Now from</p>
-                  <p className="text-sm text-[#1E293B] font-bold pl-2 font-spartan">PLAY STORE</p>
+                <div className='pr-[16px]'>
+                  <p className="text-[14px] font-quicksand">Download Now from</p>
+                  <p className="text-[24px] text-[#1E293B] font-bold pl-2 font-spartan">PLAY STORE</p>
                 </div>
               </a>
             </div>

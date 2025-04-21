@@ -37,7 +37,7 @@ const FAQSection = ({ id }: QuestionProps) => {
         />
         <div className="absolute inset-0 bg-black opacity-50 z-1"></div>
         <div className="relative fo z-10 text-white pb-[50px] md:pb-[79px] lg:pb-[79px]">
-          <h2 className="text-center font-spartan pt-[57px] pb-[66px] md:pt-[67px] md:pb-[61px] lg:pt-[77px] lg:pb-[77px] text-[36px] font-bold text-[#FFFFFF]">
+          <h2 className="text-center font-spartan pt-[57px] pb-[66px] md:pt-[67px] md:pb-[61px] lg:pt-[77px] lg:pb-[77px] text-[28px] md:text-[30px] lg:[32px] xl:text-[36px] font-bold text-[#FFFFFF]">
             Frequently Asked Questions
           </h2>
           {faqData.map((faq, index) => (

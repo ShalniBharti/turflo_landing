@@ -1,8 +1,8 @@
 import Facebook from '../../assets/icons/Facebook-B.png';
 import Instagram from '../../assets/icons/Instagram-B.png';
 import Linkdin from '../../assets/icons/Linkdin-B.png';
-import Twitter from '../../assets/icons/Twitter-B.png';
-import Logo from '../../../public/turflo-logo.png';
+import Twitter from '../../assets/icons/Youtube1.png';
+import Logo from '../../../public/turflo.png';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -103,14 +103,18 @@ const Contact = ({ id }: ContactProps) => {
       <div className="bg-[#18181B] font-spartan text-white border-b border-[#FFFFFF]">
 
         <div className="flex justify-center items-center pt-[28px]">
-          <img src={Logo} alt="Turflo Logo" className="h-[92px] w-[191px]" />
+          <img
+            src={Logo}
+            alt="Turflo Logo"
+            className="h-[92px] w-[176px] lg:h-[100px] lg:w-[191px]"
+          />
         </div>
 
         <footer className="pt-[28px] px-6">
           <div className="container mx-auto">
             {/* Mobile Layout (below 640px) */}
             <div className="max-w-[340px] mx-auto lg:hidden">
-              <h6 className="text-[32px] text-center text-[#FF7018] font-semibold mb-4">Contact Us</h6>
+              <h6 className="text-[32px] font-spartan text-center text-[#FF7018] font-semibold mb-4">Contact Us</h6>
               <form onSubmit={handleSubmit}>
                 <div className="mb-4">
                   <input
@@ -209,10 +213,18 @@ const Contact = ({ id }: ContactProps) => {
               <div className="w-1/3">
                 <h6 className="text-[16px] font-semibold pb-[19px]">Follow Us :</h6>
                 <div className="flex items-center space-x-4">
-                  <img src={Twitter} alt="Twitter" className="h-[32px] w-[32px]" />
-                  <img src={Facebook} alt="Facebook" className="h-[32px] w-[32px]" />
-                  <img src={Instagram} alt="Instagram" className="h-[32px] w-[32px]" />
-                  <img src={Linkdin} alt="Linkdin" className="h-[32px] w-[32px]" />
+                  <a href="https://www.youtube.com/channel/UCBLVZJzBf4laK-zyWr_twHw" target="_blank" rel="noopener noreferrer">
+                    <img src={Twitter} alt="Twitter" className="h-[32px] w-[32px]" />
+                  </a>
+                  <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"> {/* Added Facebook link */}
+                    <img src={Facebook} alt="Facebook" className="h-[32px] w-[32px]" />
+                  </a>
+                  <a href="https://www.instagram.com/turflooooo?igsh=MTI3ZDJoYnd1OHJ1ag==" target="_blank" rel="noopener noreferrer">
+                    <img src={Instagram} alt="Instagram" className="h-[32px] w-[32px]" />
+                  </a>
+                  <a href="https://www.linkedin.com/company/turflo/" target="_blank" rel="noopener noreferrer">
+                    <img src={Linkdin} alt="Linkdin" className="h-[32px] w-[32px]" />
+                  </a>
                 </div>
                 <h6 className="text-[16px] font-semibold text-[#FFFFFF] mt-[40px]">Mail :</h6>
                 <p className="text-[14px] font-semibold text-[#FFFFFF] mt-[13px]">support@turflo.in, info@turflo.in</p>
@@ -224,42 +236,50 @@ const Contact = ({ id }: ContactProps) => {
             <div className="hidden lg:flex flex-row justify-between gap-6 px-[8%] pb-[46px]">
               <div className="w-1/3">
                 <div>
-                  <h6 className="text-[20px] font-bold pt-[30px] pb-[30px]">Quick Link</h6>
-                  <ul className="text-[16px] text-left">
+                  <h6 className="text-[24px] font-bold pt-[30px] pb-[30px]">Quick Link</h6>
+                  <ul className="text-[20px] text-left">
                     <li className="mb-[29px]"><a href="#" className="hover:text-white">Home</a></li>
                     <li className="mb-[29px]"><a href="#" className="hover:text-white">About Us</a></li>
                     <li className="mb-[29px]"><a href="#" className="hover:text-white">FAQ's</a></li>
-                    <li className="mb-[92px]"><a href="#" className="hover:text-white">Contact Us</a></li>
+                    <li className="mb-[83px]"><a href="#" className="hover:text-white">Contact Us</a></li>
                   </ul>
                 </div>
                 <div>
                   <div className="flex items-center gap-4">
-                    <h6 className="text-[16px] font-bold">Follow Us :</h6>
+                    <h6 className="text-[18px] font-bold">Follow Us :</h6>
                     <div className="flex items-center space-x-4">
-                      <img src={Twitter} alt="Twitter" className="h-[36px] w-[36px]" />
-                      <img src={Facebook} alt="Facebook" className="h-[36px] w-[36px]" />
-                      <img src={Instagram} alt="Instagram" className="h-[36px] w-[36px]" />
-                      <img src={Linkdin} alt="Linkdin" className="h-[36px] w-[36px]" />
+                      <a href="https://www.youtube.com/channel/UCBLVZJzBf4laK-zyWr_twHw" target="_blank" rel="noopener noreferrer">
+                        <img src={Twitter} alt="Twitter" className="h-[36px] w-[36px]" />
+                      </a>
+                      <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"> {/* Added Facebook link */}
+                        <img src={Facebook} alt="Facebook" className="h-[36px] w-[36px]" />
+                      </a>
+                      <a href="https://www.instagram.com/turflooooo?igsh=MTI3ZDJoYnd1OHJ1ag==" target="_blank" rel="noopener noreferrer">
+                        <img src={Instagram} alt="Instagram" className="h-[36px] w-[36px]" />
+                      </a>
+                      <a href="https://www.linkedin.com/company/turflo/" target="_blank" rel="noopener noreferrer">
+                        <img src={Linkdin} alt="Linkdin" className="h-[36px] w-[36px]" />
+                      </a>
                     </div>
                   </div>
-                  <h6 className="text-[16px] font-bold text-[#FFFFFF] mt-[56px]">Mail : support@turflo.in , info@turflo.in</h6>
+                  <h6 className="text-[18px] font-bold text-[#FFFFFF] mt-[56px]">Mail : support@turflo.in , info@turflo.in</h6>
                 </div>
               </div>
               <div className="w-1/3">
-                <h6 className="text-[20px] font-bold pt-[30px] pb-[30px]">Other Link</h6>
-                <ul className="text-[16px] text-left">
+                <h6 className="text-[24px] font-bold pt-[30px] pb-[30px]">Other Link</h6>
+                <ul className="text-[20px] text-left">
                   <li className="mb-[29px]"><a href="#" className="hover:text-white">T&C</a></li>
                   <li className="mb-[29px]"><a href="#" className="hover:text-white">Privacy Policy</a></li>
                   <li className="mb-[29px]"><a href="#" className="hover:text-white">Testimonials</a></li>
                 </ul>
               </div>
-              <div className="w-1/3">
-                <h6 className="text-[32px] text-center text-[#FF7018] font-semibold mb-4">Contact Us</h6>
+              <div className="w-1/3 ml-[15%]">
+                <h6 className="text-[36px] text-center text-[#FF7018] font-bold mb-4">Contact Us</h6>
                 <form>
                   <div className="mb-4">
                     <input
                       type="text"
-                      className="border border-[#9CA3AF] rounded-[10px] py-[15px] px-[27px] w-full text-[#9CA3AF] focus:outline-none focus:border-white"
+                      className="border border-[#9CA3AF] text-[1.125rem] rounded-[10px] h-[50px] w-[423px] py-[15px] px-[27px] text-[#9CA3AF] focus:outline-none focus:border-white"
                       placeholder="Full Name (Required)"
                       required
                     />
@@ -267,7 +287,7 @@ const Contact = ({ id }: ContactProps) => {
                   <div className="mb-4">
                     <input
                       type="email"
-                      className="border border-[#9CA3AF] rounded-[10px] py-[15px] px-[27px] w-full text-[#9CA3AF] focus:outline-none focus:border-white"
+                      className="border border-[#9CA3AF] text-[1.125rem] rounded-[10px] h-[50px] w-[423px] py-[15px] px-[27px] text-[#9CA3AF] focus:outline-none focus:border-white"
                       placeholder="Email Address (Required)"
                       required
                     />
@@ -275,13 +295,13 @@ const Contact = ({ id }: ContactProps) => {
                   <div className="mb-4">
                     <input
                       type="tel"
-                      className="border border-[#9CA3AF] rounded-[10px] py-[15px] px-[27px] w-full text-[#9CA3AF] focus:outline-none focus:border-white"
+                      className="border border-[#9CA3AF] text-[1.125rem] rounded-[10px] h-[50px] w-[423px] py-[15px] px-[27px] text-[#9CA3AF] focus:outline-none focus:border-white"
                       placeholder="Phone Number"
                     />
                   </div>
                   <div className="mb-4">
                     <textarea
-                      className="border border-[#9CA3AF] rounded-[10px] py-[15px] px-[27px] w-full h-[93px] text-[#9CA3AF] focus:outline-none focus:border-white"
+                      className="border border-[#9CA3AF] text-[1.125rem] rounded-[10px] h-[138px] w-[423px] py-[15px] px-[27px] text-[#9CA3AF] focus:outline-none focus:border-white"
                       placeholder="Message / Inquiry Details (Required)"
                       required
                     ></textarea>
@@ -289,7 +309,7 @@ const Contact = ({ id }: ContactProps) => {
                   <div className="flex justify-center">
                     <button
                       type="submit"
-                      className="bg-[#FF7018] text-[#FFFFFF] text-[18px] font-semibold py-3 px-6 rounded-[10px] hover:bg-[#e06a00] focus:outline-none focus:ring-2 focus:ring-orange-500"
+                      className="bg-[#FF7018] text-[#FFFFFF] text-center text-[18px] font-medium h-[2.5rem] px-[20px] rounded-[10px] hover:bg-[#e06a00] focus:outline-none focus:ring-2 focus:ring-orange-500"
                     >
                       Submit
                     </button>
@@ -301,14 +321,22 @@ const Contact = ({ id }: ContactProps) => {
             {/* Mobile Footer Bottom (below 640px) */}
             <div className="px-[8%] pb-[43px] sm:hidden">
               <h6 className="text-[16px] font-semibold pb-[19px] leading-6">Follow Us :</h6>
-              <div className="flex items-center space-x-4 mb-3">
-                <img src={Twitter} alt="Twitter" className="h-[32px] w-[32px]" />
-                <img src={Facebook} alt="Facebook" className="h-[32px] w-[32px]" />
-                <img src={Instagram} alt="Instagram" className="h-[32px] w-[32px]" />
-                <img src={Linkdin} alt="Linkdin" className="h-[32px] w-[32px]" />
+              <div className="flex items-center space-x-4">
+                <a href="https://www.youtube.com/channel/UCBLVZJzBf4laK-zyWr_twHw" target="_blank" rel="noopener noreferrer">
+                  <img src={Twitter} alt="Twitter" className="h-[32px] w-[32px]" />
+                </a>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"> {/* Added Facebook link */}
+                  <img src={Facebook} alt="Facebook" className="h-[32px] w-[32px]" />
+                </a>
+                <a href="https://www.instagram.com/turflooooo?igsh=MTI3ZDJoYnd1OHJ1ag==" target="_blank" rel="noopener noreferrer">
+                  <img src={Instagram} alt="Instagram" className="h-[32px] w-[32px]" />
+                </a>
+                <a href="https://www.linkedin.com/company/turflo/" target="_blank" rel="noopener noreferrer">
+                  <img src={Linkdin} alt="Linkdin" className="h-[32px] w-[32px]" />
+                </a>
               </div>
               <h6 className="text-[16px] font-semibold text-[#FFFFFF] mt-[40px]">Mail :</h6>
-              <p className="text-[14px] font-semibold text-[#FFFFFF] mt-[13px]">support@turflo.in, info@turflo.in</p>
+              <p className="text-[16px] font-semibold text-[#FFFFFF] mt-[13px]">support@turflo.in, info@turflo.in</p>
             </div>
           </div>
         </footer>

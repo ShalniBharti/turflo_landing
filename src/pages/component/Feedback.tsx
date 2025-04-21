@@ -14,13 +14,13 @@ const Feedback = () => {
         </h1>
       </div>
 
-      <div className="w-full space-y-6">
+      <div className="w-full space-y-8">
 
         {/* First Scrolling Row (left to right) */}
         <div className="scroll-row scroll-row-1">
           <div className="scroll-content">
             {firstRowItems.concat(firstRowItems).map((feedback, index) => (
-              <div key={`feedback-1-${index}`} className="feedback-item">
+              <div key={`feedback-1-${index}`} className="feedback-item ml-[30px]">
                 <FeedbackSection
                   name={feedback.name}
                   age={feedback.age}
@@ -37,7 +37,7 @@ const Feedback = () => {
         <div className="scroll-row scroll-row-2">
           <div className="scroll-content">
             {[...secondRowItems].reverse().concat([...secondRowItems].reverse()).map((feedback, index) => (
-              <div key={`feedback-2-${index}`} className="feedback-item">
+              <div key={`feedback-2-${index}`} className="feedback-item ml-[30px]">
                 <FeedbackSection
                   name={feedback.name}
                   age={feedback.age}

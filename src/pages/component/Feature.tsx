@@ -20,7 +20,7 @@ const Feature = () => {
             <div className="w-[70px] h-[70px] md:w-[78px] md:h-[78px] lg:w-[90px] lg:h-[90px]">
               <Games />
             </div>
-            <div className="text-[60px] font-gothic md:text-[70px] lg:text-[80px] xl:text-[90px] font-semibold mt-[12px] md:mt-[16px] lg:mt-[20px] xl:mt-[22px]">
+            <div className="text-[60px] font-gothic md:text-[70px] lg:text-[80px] xl:text-[90px] mt-[12px] md:mt-[16px] lg:mt-[20px] xl:mt-[22px]">
               1K+
             </div>
             <div className="text-[16px] md:text-[21px] lg:text-[21px] font-semibold font-spartan">Game Hosted</div>
@@ -31,7 +31,7 @@ const Feature = () => {
             <div className="w-[70px] h-[70px] md:w-[78px] md:h-[78px] lg:w-[90px] lg:h-[90px]">
               <Player />
             </div>
-            <div className="text-[60px] font-gothic md:text-[70px] lg:text-[80px] xl:text-[90px] font-semibold mt-[12px] md:mt-[16px] lg:mt-[20px] xl:mt-[22px]">
+            <div className="text-[60px] font-gothic md:text-[70px] lg:text-[80px] xl:text-[90px]  mt-[12px] md:mt-[16px] lg:mt-[20px] xl:mt-[22px]">
               5K+
             </div>
             <div className="text-[16px] md:text-[21px] lg:text-[21px] font-semibold font-spartan">Players</div>
@@ -42,7 +42,7 @@ const Feature = () => {
             <div className="w-[70px] h-[70px] md:w-[78px] md:h-[78px] lg:w-[90px] lg:h-[90px]">
               <Communities />
             </div>
-            <div className="text-[60px] font-gothic md:text-[70px] lg:text-[80px] xl:text-[90px] font-semibold mt-[12px] md:mt-[16px] lg:mt-[20px] xl:mt-[22px]">
+            <div className="text-[60px] font-gothic md:text-[70px] lg:text-[80px] xl:text-[90px] mt-[12px] md:mt-[16px] lg:mt-[20px] xl:mt-[22px]">
               20+
             </div>
             <div className="text-[16px] md:text-[21px] lg:text-[21px] font-semibold font-spartan">Communities</div>
