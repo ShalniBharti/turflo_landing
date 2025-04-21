@@ -17,7 +17,7 @@ const About = ({ id }: AboutProps) => {
           style={{ backgroundImage: `url(${HeroImg})` }}
         />
 
-        <div className="container mx-auto flex flex-col items-center md:flex-row md:flex-wrap md:justify-center md:items-center xl:flex-nowrap xl:justify-center xl:items-center xl:max-w-[1024px] z-20 px-4">
+        <div className="container mx-auto flex flex-col items-center md:flex-row md:flex-wrap md:justify-center md:items-center xl:flex-nowrap xl:justify-center xl:items-center xl:max-w-6xl z-20 px-4">
           <div className="text-[#FFFFFF] mt-[54px] md:mt-0 xl:mt-0 text-center mx-auto md:text-right md:mr-[66px] md:flex-1 xl:mr-[75px]">
             <h1 className="text-[54px] font-gothic mb-[22px] leading-[110%] uppercase
                   md:text-[75px]
@@ -49,25 +49,25 @@ const About = ({ id }: AboutProps) => {
             <img src={Phone} alt="Phone" className="w-[277px] h-[535px]" />
           </div>
 
-          <div className="flex flex-row gap-4 justify-center mx-auto pt-[20px] md:w-full md:justify-center md:mt-8 md:pb-8 xl:w-auto xl:flex-shrink-0 xl:ml-[36px] xl:mt-[52px] xl:pt-0 xl:pb-0">
-            <div className="flex flex-row gap-4 justify-center xl:flex-col xl:gap-6">
-              <a href="#" className="bg-white h-[75px] flex items-center gap-3 rounded-full border-2 border-[#0295B0] px-[26px] py-[12px]">
+          <div className="flex flex-row gap-4 justify-center mx-auto pt-[20px] pb-[30px] md:w-full md:justify-center md:mt-8 md:pb-8 xl:w-auto xl:flex-shrink-0 xl:ml-[36px] xl:mt-[52px] xl:pt-0 xl:pb-0">
+            <div className="flex flex-row gap-3 justify-center xl:flex-col xl:gap-6">
+              <a href="#" className="bg-white h-[75px] flex items-center gap-2 rounded-full border-2 border-[#0295B0] px-[20px] py-[12px] md:px-[26px] md:gap-3">
                 <div className="flex-shrink-0">
-                  <img src={AppStore} alt="App Store" className="w-[40px] h-[40px]" />
+                  <img src={AppStore} alt="App Store" className="w-[22px] h-[22px] lg:w-[36px] lg:h-[36px] xl:w-[40px] xl:h-[40px]" />
                 </div>
-                <div className='pr-[16px]'>
-                  <p className="text-[14px] font-quicksand">Download Now from</p>
-                  <p className="text-[24px] text-[#1E293B] font-bold pl-2 font-spartan">APP STORE</p>
+                <div className="pr-[10px] md:pr-[16px]">
+                  <p className="text-[9px] md:text-[10px] lg:text-[12px] xl:text-[14px] font-quicksand">Download Now from</p>
+                  <p className="text-[13px] md:text-[14px] lg:text-[20px] xl:text-[24px] text-[#1E293B] font-bold pl-1 md:pl-2 font-spartan">APP STORE</p>
                 </div>
               </a>
 
-              <a href="#" className="bg-white h-[75px] flex items-center gap-3 rounded-full border-2 border-[#0295B0] px-[26px] py-[12px]">
+              <a href="#" className="bg-white h-[75px] flex items-center gap-2 rounded-full border-2 border-[#0295B0] px-[20px] py-[12px] md:px-[26px] md:gap-3">
                 <div className="flex-shrink-0">
-                  <img src={PlayStore} alt="Play Store" className="w-[40px] h-[40px]" />
+                  <img src={PlayStore} alt="App Store" className="w-[22px] h-[22px] lg:w-[36px] lg:h-[36px] xl:w-[40px] xl:h-[40px]" />
                 </div>
-                <div className='pr-[16px]'>
-                  <p className="text-[14px] font-quicksand">Download Now from</p>
-                  <p className="text-[24px] text-[#1E293B] font-bold pl-2 font-spartan">PLAY STORE</p>
+                <div className="pr-[10px] md:pr-[16px]">
+                  <p className="text-[9px] md:text-[10px] lg:text-[12px] xl:text-[14px] font-quicksand">Download Now from</p>
+                  <p className="text-[13px] md:text-[14px] lg:text-[20px] xl:text-[24px] text-[#1E293B] font-spartan font-bold pl-1 md:pl-2">PLAY STORE</p>
                 </div>
               </a>
             </div>

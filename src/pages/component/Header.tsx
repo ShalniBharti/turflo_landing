@@ -1,7 +1,7 @@
 import Logo from '../../../public/turflo-logo.png';
 import Facebook from '../../assets/icons/Facebook.png';
 import Linkdin from '../../assets/icons/Linkdin.png';
-import Twitter from '../../assets/icons/Youtube.png';
+import Youtube from '../../assets/icons/Youtube.png';
 import Instagram from '../../assets/icons/Instagram.png';
 import { HeaderArrow } from '../../components/icons';
 import { RightArrow } from '../../components/icons';
@@ -71,9 +71,11 @@ function Header() {
 
         <div className="hidden sm:flex items-center gap-2.5 md:mr-[3.125rem] mr-[1.875rem] lg:mr-[5.625rem]">
           <a href="https://www.youtube.com/channel/UCBLVZJzBf4laK-zyWr_twHw" target="_blank" rel="noopener noreferrer">
-            <img src={Twitter} alt="Twitter" className="h-[30px] w-[30px]" />
+            <img src={Youtube} alt="Twitter" className="h-[30px] w-[30px]" />
           </a>
-          <img src={Facebook} alt="Facebook" className="h-[30px] w-[30px]" />
+          <a href="" target="_blank" rel="noopener noreferrer">
+            <img src={Facebook} alt="Instagram" className="h-[30px] w-[30px]" />
+          </a>
           <a href="https://www.instagram.com/turflooooo?igsh=MTI3ZDJoYnd1OHJ1ag==" target="_blank" rel="noopener noreferrer">
             <img src={Instagram} alt="Instagram" className="h-[30px] w-[30px]" />
           </a>
@@ -118,9 +120,9 @@ function Header() {
             </button>
             <div className="flex items-center justify-center gap-[14px] mt-[31px] mb-[32px]">
               <a href="https://www.youtube.com/channel/UCBLVZJzBf4laK-zyWr_twHw" target="_blank" rel="noopener noreferrer">
-                <img src={Twitter} alt="Twitter" className="h-[24px] w-[24px]" />
+                <img src={Youtube} alt="Twitter" className="h-[24px] w-[24px]" />
               </a>
-              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"> {/* Added Facebook link as you didn't provide one */}
+              <a href="" target="_blank" rel="noopener noreferrer">
                 <img src={Facebook} alt="Facebook" className="h-[24px] w-[24px]" />
               </a>
               <a href="https://www.instagram.com/turflooooo?igsh=MTI3ZDJoYnd1OHJ1ag==" target="_blank" rel="noopener noreferrer">

@@ -3,7 +3,7 @@ import Turfloweb2 from '../../../public/Turflo Web2.png';
 import Turfloweb3 from '../../../public/Turflo Web3.png';
 import Vector from '../../assets/icons/Vector.png';
 import Game from '../../assets/icons/Game.png';
-import Group from '../../assets/icons/Group1 (2).png';
+import Group from '../../assets/icons/Group1.png';
 
 const Detail = () => {
     return (

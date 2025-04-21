@@ -1,7 +1,7 @@
 import Facebook from '../../assets/icons/Facebook-B.png';
 import Instagram from '../../assets/icons/Instagram-B.png';
 import Linkdin from '../../assets/icons/Linkdin-B.png';
-import Twitter from '../../assets/icons/Youtube1.png';
+import Youtube from '../../assets/icons/Youtube1.png';
 import Logo from '../../../public/turflo.png';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -214,9 +214,9 @@ const Contact = ({ id }: ContactProps) => {
                 <h6 className="text-[16px] font-semibold pb-[19px]">Follow Us :</h6>
                 <div className="flex items-center space-x-4">
                   <a href="https://www.youtube.com/channel/UCBLVZJzBf4laK-zyWr_twHw" target="_blank" rel="noopener noreferrer">
-                    <img src={Twitter} alt="Twitter" className="h-[32px] w-[32px]" />
+                    <img src={Youtube} alt="Twitter" className="h-[32px] w-[32px]" />
                   </a>
-                  <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"> {/* Added Facebook link */}
+                  <a href="" target="_blank" rel="noopener noreferrer">
                     <img src={Facebook} alt="Facebook" className="h-[32px] w-[32px]" />
                   </a>
                   <a href="https://www.instagram.com/turflooooo?igsh=MTI3ZDJoYnd1OHJ1ag==" target="_blank" rel="noopener noreferrer">
@@ -245,24 +245,29 @@ const Contact = ({ id }: ContactProps) => {
                   </ul>
                 </div>
                 <div>
-                  <div className="flex items-center gap-4">
-                    <h6 className="text-[18px] font-bold">Follow Us :</h6>
-                    <div className="flex items-center space-x-4">
-                      <a href="https://www.youtube.com/channel/UCBLVZJzBf4laK-zyWr_twHw" target="_blank" rel="noopener noreferrer">
-                        <img src={Twitter} alt="Twitter" className="h-[36px] w-[36px]" />
+                  <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+                    <h6 className="text-[18px] font-bold whitespace-nowrap">Follow Us :</h6>
+                    <div className="flex items-center space-x-4 flex-shrink-0">
+                      <a href="https://www.youtube.com/channel/UCBLVZJzBf4laK-zyWr_twHw" target="_blank" rel="noopener noreferrer" className="flex-shrink-0">
+                        <img src={Youtube} alt="Twitter" className="h-[36px] w-[36px]" />
                       </a>
-                      <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"> {/* Added Facebook link */}
+                      <a href="" target="_blank" rel="noopener noreferrer" className="flex-shrink-0">
                         <img src={Facebook} alt="Facebook" className="h-[36px] w-[36px]" />
                       </a>
-                      <a href="https://www.instagram.com/turflooooo?igsh=MTI3ZDJoYnd1OHJ1ag==" target="_blank" rel="noopener noreferrer">
+                      <a href="https://www.instagram.com/turflooooo?igsh=MTI3ZDJoYnd1OHJ1ag==" target="_blank" rel="noopener noreferrer" className="flex-shrink-0">
                         <img src={Instagram} alt="Instagram" className="h-[36px] w-[36px]" />
                       </a>
-                      <a href="https://www.linkedin.com/company/turflo/" target="_blank" rel="noopener noreferrer">
+                      <a href="https://www.linkedin.com/company/turflo/" target="_blank" rel="noopener noreferrer" className="flex-shrink-0">
                         <img src={Linkdin} alt="Linkdin" className="h-[36px] w-[36px]" />
                       </a>
                     </div>
                   </div>
-                  <h6 className="text-[18px] font-bold text-[#FFFFFF] mt-[56px]">Mail : support@turflo.in , info@turflo.in</h6>
+
+
+                  <div className="flex flex-row items-center gap-2 mt-[36px] sm:mt-[56px] flex-wrap sm:flex-nowrap">
+                    <h6 className="text-[18px] font-bold text-[#FFFFFF] whitespace-nowrap">Mail :</h6>
+                    <p className="text-[16px] sm:text-[18px] text-[#FFFFFF] whitespace-nowrap">support@turflo.in, info@turflo.in</p>
+                  </div>
                 </div>
               </div>
               <div className="w-1/3">
@@ -323,7 +328,7 @@ const Contact = ({ id }: ContactProps) => {
               <h6 className="text-[16px] font-semibold pb-[19px] leading-6">Follow Us :</h6>
               <div className="flex items-center space-x-4">
                 <a href="https://www.youtube.com/channel/UCBLVZJzBf4laK-zyWr_twHw" target="_blank" rel="noopener noreferrer">
-                  <img src={Twitter} alt="Twitter" className="h-[32px] w-[32px]" />
+                  <img src={Youtube} alt="Twitter" className="h-[32px] w-[32px]" />
                 </a>
                 <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"> {/* Added Facebook link */}
                   <img src={Facebook} alt="Facebook" className="h-[32px] w-[32px]" />
