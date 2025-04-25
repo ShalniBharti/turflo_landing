@@ -14,10 +14,12 @@ const About = ({ id }: AboutProps) => {
         <div className="absolute inset-0 bg-[#000] opacity-50 z-10" />
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
-          style={{ backgroundImage: `url(${HeroImg})`}}
+          style={{
+            backgroundImage: `url(${HeroImg})`,
+            backgroundPosition: 'center center'
+          }}
         />
-
-        <div className="container px-auto flex flex-col items-center md:flex-row md:flex-wrap md:justify-center md:items-center xl:flex-nowrap xl:justify-center xl:items-center xl:max-w-7xl z-20 md:pr-[100px] lg:pr-[126px]">
+        <div className="container px-auto flex flex-col items-center md:flex-row md:flex-wrap md:justify-center md:items-center xl:flex-nowrap xl:justify-center xl:items-center xl:max-w-7xl z-20 md:pr-[100px] lg:pr-[150px]">
           <div className="text-[#FFFFFF] mt-[54px] md:mt-[50px] xl:mt-0 text-center mx-auto md:text-right md:mr-[66px] md:flex-1 xl:mr-[75px]">
             <h1 className="text-[48px] font-gothic mb-[22px] lg:mb-[16px] xl:pt-[48px] leading-[110%] uppercase
                   md:text-[75px]

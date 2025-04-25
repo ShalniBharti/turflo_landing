@@ -122,7 +122,7 @@ const Contact = ({ id }: ContactProps) => {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className={`border ${errors.name ? 'border-red-500' : 'border-[#9CA3AF]'} rounded-[10px] py-[15px] px-[27px] w-full text-[#9CA3AF] focus:outline-none focus:border-white`}
+                    className={`border ${errors.name ? 'border-red-500' : 'border-[#9CA3AF]'} rounded-[10px] py-[12px] px-[27px] w-full text-[#9CA3AF] focus:outline-none focus:border-white`}
                     placeholder="Full Name (Required)"
                   />
                   {errors.name && <p className="text-red-500 text-xs mt-1">{errors.name}</p>}
@@ -133,7 +133,7 @@ const Contact = ({ id }: ContactProps) => {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className={`border ${errors.email ? 'border-red-500' : 'border-[#9CA3AF]'} rounded-[10px] py-[15px] px-[27px] w-full text-[#9CA3AF] focus:outline-none focus:border-white`}
+                    className={`border ${errors.email ? 'border-red-500' : 'border-[#9CA3AF]'} rounded-[10px] py-[12px] px-[27px] w-full text-[#9CA3AF] focus:outline-none focus:border-white`}
                     placeholder="Email Address (Required)"
                   />
                   {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email}</p>}
@@ -144,7 +144,7 @@ const Contact = ({ id }: ContactProps) => {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className={`border ${errors.phone ? 'border-red-500' : 'border-[#9CA3AF]'} rounded-[10px] py-[15px] px-[27px] w-full text-[#9CA3AF] focus:outline-none focus:border-white`}
+                    className={`border ${errors.phone ? 'border-red-500' : 'border-[#9CA3AF]'} rounded-[10px] py-[12px] px-[27px] w-full text-[#9CA3AF] focus:outline-none focus:border-white`}
                     placeholder="Phone Number"
                   />
                   {errors.phone && <p className="text-red-500 text-xs mt-1">{errors.phone}</p>}
@@ -162,7 +162,7 @@ const Contact = ({ id }: ContactProps) => {
                 <div className="flex justify-center">
                   <button
                     type="submit"
-                    className="bg-[#FF7018] text-[#FFFFFF] text-[18px] font-medium py-[14px] px-[20px] rounded-[10px] hover:bg-[#e06a00] focus:outline-none focus:ring-2 focus:ring-orange-500"
+                    className="bg-[#FF7018] text-[#FFFFFF] text-[18px] font-medium py-[8px] px-[20px] rounded-[10px] hover:bg-[#e06a00] focus:outline-none focus:ring-2 focus:ring-orange-500"
                   >
                     Submit
                   </button>
@@ -233,10 +233,10 @@ const Contact = ({ id }: ContactProps) => {
 
             {/* Desktop Layout (1024px and above) */}
 
-            <div className="hidden lg:flex flex-row justify-between gap-6 px-[8%] pb-[46px]">
+            <div className="hidden lg:flex flex-row justify-between gap-0 px-[4%] pb-[46px]">
               <div className="w-1/3">
                 <div>
-                  <h6 className="text-[24px] font-bold pt-[30px] pb-[30px]">Quick Link</h6>
+                  <h6 className="text-[24px] font-bold pt-[30px] pb-[30px] pl-0">Quick Link</h6>
                   <ul className="text-[20px] text-left">
                     <li className="mb-[29px]"><a href="#" className="hover:text-white">Home</a></li>
                     <li className="mb-[29px]"><a href="#" className="hover:text-white">About Us</a></li>
@@ -278,9 +278,9 @@ const Contact = ({ id }: ContactProps) => {
                   <li className="mb-[29px]"><a href="#" className="hover:text-white">Testimonials</a></li>
                 </ul>
               </div>
-              <div className="w-1/3 mx-auto">
+              <div className="flex flex-col items-center">
                 <h6 className="text-[36px] text-center text-[#FF7018] font-bold mb-4">Contact Us</h6>
-                <form>
+                <form className="flex flex-col items-center">
                   <div className="mb-4">
                     <input
                       type="text"
@@ -311,14 +311,12 @@ const Contact = ({ id }: ContactProps) => {
                       required
                     ></textarea>
                   </div>
-                  <div className="flex justify-center">
-                    <button
-                      type="submit"
-                      className="bg-[#FF7018] text-[#FFFFFF] text-center text-[18px] font-medium h-[2.5rem] px-[20px] rounded-[10px] hover:bg-[#e06a00] focus:outline-none focus:ring-2 focus:ring-orange-500"
-                    >
-                      Submit
-                    </button>
-                  </div>
+                  <button
+                    type="submit"
+                    className="bg-[#FF7018] text-[#FFFFFF] text-center text-[18px] font-medium h-[2.5rem] px-[20px] rounded-[10px] hover:bg-[#e06a00] focus:outline-none focus:ring-2 focus:ring-orange-500"
+                  >
+                    Submit
+                  </button>
                 </form>
               </div>
             </div>
