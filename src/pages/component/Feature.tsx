@@ -14,10 +14,10 @@ const Feature = () => {
           <span className="text-[#FF7018] font-semibold">match</span> waiting for you.
         </p>
 
-        <div className="flex flex-wrap justify-center items-center pr-2 gap-[30px] md:gap-[50px] lg:gap-[100px] xl:gap-[150px] pt-[78px] md:pt-[118px] lg:pt-[108px]">
+        <div className="flex flex-wrap justify-center items-center gap-[20px] md:gap-[50px] lg:gap-[100px] xl:gap-[150px] pt-[78px] md:pt-[118px] lg:pt-[108px]">
 
           <div className="flex flex-col items-center">
-            <div className="w-[65px] h-[65px] md:w-[78px] md:h-[78px] lg:w-[90px] lg:h-[90px]">
+            <div className="w-[60px] h-[60px] md:w-[78px] md:h-[78px] lg:w-[90px] lg:h-[90px]">
               <Games />
             </div>
             <div className="text-[54px] font-gothic md:text-[70px] lg:text-[80px] xl:text-[90px] mt-[12px] md:mt-[16px] lg:mt-[20px] xl:mt-[22px]">
@@ -28,7 +28,7 @@ const Feature = () => {
 
 
           <div className="flex flex-col items-center">
-            <div className="w-[65px] h-[65px] md:w-[78px] md:h-[78px] lg:w-[90px] lg:h-[90px]">
+            <div className="w-[60px] h-[60px] md:w-[78px] md:h-[78px] lg:w-[90px] lg:h-[90px]">
               <Player />
             </div>
             <div className="text-[54px] font-gothic md:text-[70px] lg:text-[80px] xl:text-[90px]  mt-[12px] md:mt-[16px] lg:mt-[20px] xl:mt-[22px]">
@@ -39,7 +39,7 @@ const Feature = () => {
 
 
           <div className="flex flex-col items-center">
-            <div className="w-[65px] h-[65px] md:w-[78px] md:h-[78px] lg:w-[90px] lg:h-[90px]">
+            <div className="w-[60px] h-[60px] md:w-[78px] md:h-[78px] lg:w-[90px] lg:h-[90px]">
               <Communities />
             </div>
             <div className="text-[54px] font-gothic md:text-[70px] lg:text-[80px] xl:text-[90px] mt-[12px] md:mt-[16px] lg:mt-[20px] xl:mt-[22px]">
