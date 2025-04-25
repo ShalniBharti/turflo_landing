@@ -1,11 +1,11 @@
-import Logo from '../../../public/turflo-logo.png';
+import Logo from '../../../public/turflo.png';
 import Facebook from '../../assets/icons/Facebook.png';
 import Linkdin from '../../assets/icons/Linkdin.png';
 import Youtube from '../../assets/icons/Youtube.png';
 import Instagram from '../../assets/icons/Instagram.png';
 import { HeaderArrow } from '../../components/icons';
 import { RightArrow } from '../../components/icons';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,6 +27,46 @@ function Header() {
       });
     }
   };
+
+  // Add this useEffect to handle scroll events
+  useEffect(() => {
+    const handleScroll = () => {
+      // Get positions of all sections
+      const aboutSection = document.getElementById('about');
+      const faqSection = document.getElementById('faq');
+      const contactSection = document.getElementById('contact');
+
+      if (!aboutSection || !faqSection || !contactSection) return;
+
+      // Get current scroll position
+      const scrollPosition = window.scrollY + 100; // Adding offset to account for header height
+
+      // Get the top positions of each section
+      const aboutTop = aboutSection.offsetTop;
+      const faqTop = faqSection.offsetTop;
+      const contactTop = contactSection.offsetTop;
+
+      // Determine which section is currently in view
+      if (scrollPosition >= contactTop) {
+        setActiveButton('CONTACT');
+      } else if (scrollPosition >= faqTop) {
+        setActiveButton('FAQS');
+      } else if (scrollPosition >= aboutTop) {
+        setActiveButton('ABOUT');
+      }
+    };
+
+    // Add scroll event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Call once to set initial state based on page load position
+    handleScroll();
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <div className="relative">

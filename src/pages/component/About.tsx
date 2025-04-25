@@ -11,14 +11,14 @@ const About = ({ id }: AboutProps) => {
   return (
     <section id={id}>
       <div className="relative w-full min-h-screen flex flex-col items-center md:flex-row md:items-center xl:flex-row xl:justify-center mt-[54px] md:mt-[72px] xl:mt-[53px] overflow-hidden pt-[24px] md:pt-0">
-        <div className="absolute inset-0 bg-[#000] opacity-50" />
+        <div className="absolute inset-0 bg-[#000] opacity-50 z-10" />
         <div
-          className="absolute inset-0 bg-cover bg-center z-0"
+          className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${HeroImg})` }}
         />
 
-        <div className="container mx-auto flex flex-col items-center md:flex-row md:flex-wrap md:justify-center md:items-center xl:flex-nowrap xl:justify-center xl:items-center xl:max-w-6xl z-20 px-4">
-          <div className="text-[#FFFFFF] mt-[54px] md:mt-0 xl:mt-0 text-center mx-auto md:text-right md:mr-[66px] md:flex-1 xl:mr-[75px]">
+        <div className="container mx-auto flex flex-col items-center md:flex-row md:flex-wrap md:justify-center md:items-center xl:flex-nowrap xl:justify-center xl:items-center xl:max-w-7xl z-20 lg:pr-[116px]">
+          <div className="text-[#FFFFFF] mt-[54px] md:mt-[50px] xl:mt-0 text-center mx-auto md:text-right md:mr-[66px] md:flex-1 xl:mr-[75px]">
             <h1 className="text-[54px] font-gothic mb-[22px] lg:mb-[16px] leading-[110%] uppercase
                   md:text-[75px]
                   lg:text-[86px]
@@ -34,25 +34,35 @@ const About = ({ id }: AboutProps) => {
                 YOU ONE
               </span>
             </h1>
+            <p className="text-[14px] font-quicksand leading-[22px] mx-auto md:mx-0
+              md:text-[16px]
+              lg:text-[22px]
+              xl:text-[18px]">
+              {/* Content for mobile (<640px) and xl (>1280px) */}
+              <span className="block md:hidden xl:block">
+                Hosting a match or just vibin' for a quick <br />
+                game? Turflo's the plug. No calls. No flaky DMs.<br />
+                Just show up and play.
+              </span>
 
-            <p className="text-[14px] font-quicksand leading-[26px] mx-auto md:mx-0
-                  md:text-[16px]
-                  lg:text-[22px]
-                  xl:text-[18px]">
-              Hosting a match or just vibin' for a quick <br />
-              game? Turflo's the plug. No calls. No flaky DMs.<br />
-              Just show up and play.
+              {/* Content for md (≥640px) to lg (<1280px) */}
+              <span className="hidden md:block xl:hidden">
+                Hosting a match or just vibin' for a quick <br />
+                game? Turflo's the plug. No calls. <br />
+                No flaky DMs.<br />
+                Just show up and play.
+              </span>
             </p>
           </div>
 
-          <div className="relative z-20 md:flex-shrink-0">
+          <div className="relative z-20 md:flex-shrink-0 md:mt-[50px]">
             <img
               src={Phone}
               alt="Phone"
               className="
                 sm:w-[194px] sm:h-[375px]
                 md:w-[206px] md:h-[400px] 
-                lg:w-[233px] lg:h-[450px] 
+                lg:w-[233px] lg:h-[480px] 
                 xl:w-[277px] xl:h-[535px]"
             />
           </div>

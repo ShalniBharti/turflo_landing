@@ -41,15 +41,25 @@ const Detail = () => {
                     </div>
 
                     <div className="absolute top-[60%] xl:top-[65%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-5">
-                        <div className="bg-[#FF7018] rounded-full w-[90px] h-[90px] flex items-center justify-center sm:w-[100px] sm:h-[100px] md:w-[120px] md:h-[120px]">
-                            <img src={Vector} className="w-[76px] h-[76px]" alt="Group Icon" />
+                        <div className="bg-[#FF7018] rounded-full w-[90px] h-[90px] flex items-center justify-center 
+                md:w-[90px] md:h-[90px] 
+                lg:w-[100px] lg:h-[100px] 
+                xl:w-[120px] xl:h-[120px]">
+                            <img
+                                src={Vector}
+                                alt="Group Icon"
+                                className="w-[56px] h-[56px] 
+               lg:w-[60px] lg:h-[60px] 
+               xl:w-[65px] xl:h-[65px]"
+                            />
                         </div>
+
                         <p className="whitespace-nowrap font-bold font-spartan text-2xl text-white text-center">Join a Game</p>
                     </div>
 
                     {/* Footer - Hidden on small screens, shown on larger */}
                     <div className="absolute bottom-0 left-0 w-full h-[67px] bg-[#FF7018] items-center justify-center hidden sm:flex">
-                        <p className="font-normal font-gothic text-[36px] lg:text-[40px] xl:text-[45px] text-center text-[#1E293B]">PLAY EASY</p>
+                        <p className="font-normal font-gothic text-[36px] lg:text-[40px] xl:text-[45px] text-center text-[#FFF]">PLAY EASY</p>
                     </div>
                 </div>
 
@@ -66,15 +76,25 @@ const Detail = () => {
                     </div>
 
                     <div className="absolute top-[60%] xl:top-[65%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-5">
-                        <div className="bg-[#FF7018] rounded-full w-[90px] h-[90px] flex items-center justify-center sm:w-[100px] sm:h-[100px] md:w-[120px] md:h-[120px]">
-                            <img src={Game} className="w-[76px] h-[76px]" alt="Group Icon" />
+                        <div className="bg-[#FF7018] rounded-full w-[90px] h-[90px] flex items-center justify-center 
+                md:w-[90px] md:h-[90px] 
+                lg:w-[100px] lg:h-[100px] 
+                xl:w-[120px] xl:h-[120px]">
+                            <img
+                                src={Game}
+                                alt="Group Icon"
+                                className="w-[56px] h-[56px] 
+               lg:w-[60px] lg:h-[60px] 
+               xl:w-[79px] xl:h-[79px]"
+                            />
                         </div>
+
                         <p className="whitespace-nowrap font-bold font-spartan text-2xl text-white text-center">Host a Game</p>
                     </div>
 
                     {/* Footer - Hidden on small screens, shown on larger */}
                     <div className="absolute bottom-0 left-0 w-full h-[67px] bg-[#FF7018] items-center justify-center hidden sm:flex">
-                        <p className="font-normal font-gothic text-[36px] lg:text-[40px] xl:text-[45px] text-center text-[#1E293B]">PLAY OFTEN</p>
+                        <p className="font-normal font-gothic text-[36px] lg:text-[40px] xl:text-[45px] text-center text-[#FFF]">PLAY OFTEN</p>
                     </div>
                 </div>
 
@@ -91,9 +111,19 @@ const Detail = () => {
                     </div>
 
                     <div className="absolute top-[60%] xl:top-[65%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-5">
-                        <div className="bg-[#FF7018] rounded-full w-[90px] h-[90px] flex items-center justify-center sm:w-[100px] sm:h-[100px] md:w-[120px] md:h-[120px]">
-                            <img src={Group} className="w-[76px] h-[76px]" alt="Group Icon" />
+                        <div className="bg-[#FF7018] rounded-full w-[90px] h-[90px] flex items-center justify-center 
+                md:w-[90px] md:h-[90px] 
+                lg:w-[100px] lg:h-[100px] 
+                xl:w-[120px] xl:h-[120px]">
+                            <img
+                                src={Group}
+                                alt="Group Icon"
+                                className="w-[60px] h-[60px] 
+               lg:w-[63px] lg:h-[63px] 
+               xl:w-[90px] xl:h-[90px]"
+                            />
                         </div>
+
                         <p className="whitespace-nowrap font-bold font-spartan text-2xl text-white text-center">
                             Host a Tournament
                         </p>

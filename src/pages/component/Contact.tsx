@@ -278,13 +278,13 @@ const Contact = ({ id }: ContactProps) => {
                   <li className="mb-[29px]"><a href="#" className="hover:text-white">Testimonials</a></li>
                 </ul>
               </div>
-              <div className="w-1/3 ml-[15%]">
+              <div className="w-1/3 mx-auto">
                 <h6 className="text-[36px] text-center text-[#FF7018] font-bold mb-4">Contact Us</h6>
                 <form>
                   <div className="mb-4">
                     <input
                       type="text"
-                      className="border border-[#9CA3AF] text-[1.125rem] rounded-[10px] h-[50px] w-[423px] py-[15px] px-[27px] text-[#9CA3AF] focus:outline-none focus:border-white"
+                      className="border border-[#9CA3AF] text-[1.125rem] rounded-[10px] h-[50px] w-[356px] py-[15px] px-[27px] text-[#9CA3AF] focus:outline-none focus:border-white"
                       placeholder="Full Name (Required)"
                       required
                     />
@@ -292,7 +292,7 @@ const Contact = ({ id }: ContactProps) => {
                   <div className="mb-4">
                     <input
                       type="email"
-                      className="border border-[#9CA3AF] text-[1.125rem] rounded-[10px] h-[50px] w-[423px] py-[15px] px-[27px] text-[#9CA3AF] focus:outline-none focus:border-white"
+                      className="border border-[#9CA3AF] text-[1.125rem] rounded-[10px] h-[50px] w-[356px] py-[15px] px-[27px] text-[#9CA3AF] focus:outline-none focus:border-white"
                       placeholder="Email Address (Required)"
                       required
                     />
@@ -300,13 +300,13 @@ const Contact = ({ id }: ContactProps) => {
                   <div className="mb-4">
                     <input
                       type="tel"
-                      className="border border-[#9CA3AF] text-[1.125rem] rounded-[10px] h-[50px] w-[423px] py-[15px] px-[27px] text-[#9CA3AF] focus:outline-none focus:border-white"
+                      className="border border-[#9CA3AF] text-[1.125rem] rounded-[10px] h-[50px] w-[356px] py-[15px] px-[27px] text-[#9CA3AF] focus:outline-none focus:border-white"
                       placeholder="Phone Number"
                     />
                   </div>
                   <div className="mb-4">
                     <textarea
-                      className="border border-[#9CA3AF] text-[1.125rem] rounded-[10px] h-[138px] w-[423px] py-[15px] px-[27px] text-[#9CA3AF] focus:outline-none focus:border-white"
+                      className="border border-[#9CA3AF] text-[1.125rem] rounded-[10px] h-[138px] w-[356px] py-[15px] px-[27px] text-[#9CA3AF] focus:outline-none focus:border-white"
                       placeholder="Message / Inquiry Details (Required)"
                       required
                     ></textarea>
