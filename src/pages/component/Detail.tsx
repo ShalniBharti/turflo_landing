@@ -8,12 +8,12 @@ import Group from '../../assets/icons/Group1.png';
 const Detail = () => {
     return (
         <div className="relative flex flex-col w-full">
-            <div className="sm:hidden bg-[#FF7018] p-[20px] w-full">
-                <h2 className="font-normal font-gothic text-center text-[60px] text-white leading-[100%]">
+            <div className="sm:hidden bg-[#FF7018] py-[20px] w-full">
+                <h2 className="font-normal font-gothic text-center text-[54px] text-white leading-[100%]">
                     HOW DOES IT WORK?
                 </h2>
-                <p className="font-mediun font-quicksand text-center text-[14px] text-white leading-[140%] p-[10px]">
-                    Getting you off the couch and taking you out for an adventure. Find <span className="font-semibold text-[#1E293B]">matches</span> happening right now near you.
+                <p className="font-mediun font-quicksand text-center text-[13px] text-white leading-[140%] p-[10px]">
+                    Getting you off the couch and taking you out <br /> for an adventure. Find <span className="font-semibold text-[#1E293B]">matches</span> happening right <br /> now near you.
                 </p>
             </div>
 
@@ -21,8 +21,10 @@ const Detail = () => {
                 <h2 className="font-normal font-gothic text-center text-[55px] md:text-[76px] lg:text-[86px] xl:text-[106px] text-white leading-[100%] mb-[26px] md:mb-[26px] lg:mb-[3px]">
                     HOW DOES IT WORK?
                 </h2>
-                <p className="font-normal font-quicksand text-center text-[14px] md:text-[16px] xl:text-[20px] text-white mx-auto">
-                    Getting you off the couch and taking you out for an adventure. Find <span className="font-semibold text-[#FF7018]">matches</span> happening right now near you.
+                <p className="font-normal font-quicksand text-center text-[14px] md:text-[16px] xl:text-[20px] text-white mx-auto xl:whitespace-nowrap">
+                    Getting you off the couch and taking you out for an adventure.{" "}
+                    <br className="xl:hidden" /> Find{" "}
+                    <span className="font-semibold text-[#FF7018]">matches</span> happening right now near you.
                 </p>
             </div>
 
@@ -139,13 +141,13 @@ const Detail = () => {
 
             {/* Mobile Footers */}
             <div className="sm:hidden bg-[#FF7018] h-[67px] flex items-center justify-center">
-                <p className="font-normal font-gothic text-[36px] text-center text-white">PLAY EASY!</p>
+                <p className="font-normal font-gothic text-[48px] text-center text-white">PLAY EASY!</p>
             </div>
             <div className="sm:hidden bg-[#FF7018] h-[67px] flex items-center justify-center">
-                <p className="font-normal font-gothic text-[36px] text-center text-white">PLAY OFTEN!</p>
+                <p className="font-normal font-gothic text-[48px] text-center text-white">PLAY OFTEN!</p>
             </div>
             <div className="sm:hidden bg-[#FF7018] h-[67px] flex items-center justify-center">
-                <p className="font-normal font-gothic text-[36px] text-center text-[#1E293B]">PLAY WITH TURFLO!</p>
+                <p className="font-normal font-gothic text-[48px] text-center text-[#1E293B]">PLAY WITH TURFLO!</p>
             </div>
         </div>
     );

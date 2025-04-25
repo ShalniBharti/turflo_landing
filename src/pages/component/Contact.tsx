@@ -113,7 +113,7 @@ const Contact = ({ id }: ContactProps) => {
         <footer className="pt-[28px] px-6">
           <div className="container mx-auto">
             {/* Mobile Layout (below 640px) */}
-            <div className="w-[330px] md:w-[400px] mx-auto lg:hidden">
+            <div className="w-full max-w-[400px] mx-auto lg:hidden">
               <h6 className="text-[32px] font-spartan text-center text-[#FF7018] font-semibold mb-4">Contact Us</h6>
               <form onSubmit={handleSubmit}>
                 <div className="mb-4">
@@ -172,7 +172,7 @@ const Contact = ({ id }: ContactProps) => {
 
             {/* Mobile Footer Links (below 640px) */}
             <div className="flex flex-row sm:hidden pt-[60px] w-full">
-              <div className="w-[calc(50%-6%)] px-[8%]">
+              <div className="w-[calc(50%-6%)] px-[4%]">
                 <h6 className="text-[20px] font-bold pb-[30px]">Quick Link</h6>
                 <ul className="text-[16px] text-left">
                   <li className="mb-[29px]"><a href="#" className="hover:text-white">Home</a></li>
@@ -181,7 +181,7 @@ const Contact = ({ id }: ContactProps) => {
                   <li className="mb-[60px]"><a href="#" className="hover:text-white">Contact Us</a></li>
                 </ul>
               </div>
-              <div className="w-[calc(50%-6%)] px-[6%]">
+              <div className="w-[calc(50%-6%)] px-[4%]">
                 <h6 className="text-[20px] font-bold pb-[30px]">Other Link</h6>
                 <ul className="text-[16px] text-left">
                   <li className="mb-[29px]"><a href="#" className="hover:text-white">T&C</a></li>
@@ -324,7 +324,7 @@ const Contact = ({ id }: ContactProps) => {
             </div>
 
             {/* Mobile Footer Bottom (below 640px) */}
-            <div className="px-[8%] pb-[43px] sm:hidden">
+            <div className="px-[4%] pb-[43px] sm:hidden">
               <h6 className="text-[16px] font-semibold pb-[19px] leading-6">Follow Us :</h6>
               <div className="flex items-center space-x-4">
                 <a href="https://www.youtube.com/channel/UCBLVZJzBf4laK-zyWr_twHw" target="_blank" rel="noopener noreferrer">

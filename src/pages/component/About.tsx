@@ -10,16 +10,16 @@ interface AboutProps {
 const About = ({ id }: AboutProps) => {
   return (
     <section id={id}>
-      <div className="relative w-full min-h-screen flex flex-col items-center md:flex-row md:items-center xl:flex-row xl:justify-center mt-[54px] md:mt-[72px] xl:mt-[53px] overflow-hidden pt-[24px] md:pt-0">
+      <div className="relative w-full flex flex-col items-center md:flex-row md:items-center xl:flex-row xl:justify-center mt-[54px] md:py-[58px] xl:mt-[53px] overflow-hidden pt-[24px]">
         <div className="absolute inset-0 bg-[#000] opacity-50 z-10" />
         <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${HeroImg})` }}
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
+          style={{ backgroundImage: `url(${HeroImg})`}}
         />
 
-        <div className="container mx-auto flex flex-col items-center md:flex-row md:flex-wrap md:justify-center md:items-center xl:flex-nowrap xl:justify-center xl:items-center xl:max-w-7xl z-20 lg:pr-[116px]">
+        <div className="container px-auto flex flex-col items-center md:flex-row md:flex-wrap md:justify-center md:items-center xl:flex-nowrap xl:justify-center xl:items-center xl:max-w-7xl z-20 md:pr-[100px] lg:pr-[126px]">
           <div className="text-[#FFFFFF] mt-[54px] md:mt-[50px] xl:mt-0 text-center mx-auto md:text-right md:mr-[66px] md:flex-1 xl:mr-[75px]">
-            <h1 className="text-[54px] font-gothic mb-[22px] lg:mb-[16px] leading-[110%] uppercase
+            <h1 className="text-[48px] font-gothic mb-[22px] lg:mb-[16px] xl:pt-[48px] leading-[110%] uppercase
                   md:text-[75px]
                   lg:text-[86px]
                   xl:text-[106px]">
@@ -38,15 +38,13 @@ const About = ({ id }: AboutProps) => {
               md:text-[16px]
               lg:text-[22px]
               xl:text-[18px]">
-              {/* Content for mobile (<640px) and xl (>1280px) */}
-              <span className="block md:hidden xl:block">
+              <span className="block md:hidden xl:block pb-[30px]">
                 Hosting a match or just vibin' for a quick <br />
                 game? Turflo's the plug. No calls. No flaky DMs.<br />
                 Just show up and play.
               </span>
 
-              {/* Content for md (≥640px) to lg (<1280px) */}
-              <span className="hidden md:block xl:hidden">
+              <span className="hidden md:block xl:hidden lg:leading-7">
                 Hosting a match or just vibin' for a quick <br />
                 game? Turflo's the plug. No calls. <br />
                 No flaky DMs.<br />
@@ -72,20 +70,20 @@ const About = ({ id }: AboutProps) => {
               {/* App Store Button */}
               <a
                 href="#"
-                className="bg-white h-[40px] md:h-[50px] lg:h-[50px] xl:h-[75px] flex items-center gap-2 rounded-full border-2 border-[#0295B0] px-[20px] py-[6px] md:px-[26px] md:gap-3"
+                className="bg-white h-[50px] md:h-[60px] lg:h-[60px] xl:h-[75px] flex items-center gap-2 rounded-full border-2 border-[#0295B0] px-[8px] py-[6px] md:px-[12px] md:gap-3"
               >
                 <div className="flex-shrink-0">
                   <img
                     src={AppStore}
                     alt="App Store"
-                    className="w-[22px] h-[22px] lg:w-[36px] lg:h-[36px] xl:w-[40px] xl:h-[40px]"
+                    className="w-[22px] h-[22px] md:w-[30px] md:h-[30px] lg:w-[36px] lg:h-[36px] xl:w-[40px] xl:h-[40px]"
                   />
                 </div>
                 <div className="pr-[10px] md:pr-[16px]">
                   <p className="whitespace-nowrap text-[9px] md:text-[10px] lg:text-[12px] xl:text-[14px] font-quicksand">
                     Download Now from
                   </p>
-                  <p className="text-[13px] md:text-[14px] lg:text-[20px] xl:text-[24px] text-[#1E293B] font-bold pl-1 md:pl-2 font-spartan">
+                  <p className="text-[14px] md:text-[14px] lg:text-[20px] xl:text-[24px] text-[#1E293B] font-bold pl-1 md:pl-2 font-spartan">
                     APP STORE
                   </p>
                 </div>
@@ -94,13 +92,13 @@ const About = ({ id }: AboutProps) => {
               {/* Play Store Button */}
               <a
                 href="#"
-                className="bg-white h-[40px] md:h-[50px] lg:h-[50px] xl:h-[75px] flex items-center gap-2 rounded-full border-2 border-[#0295B0] px-[20px] py-[6px] md:px-[26px] md:gap-3"
+                className="bg-white h-[50px] md:h-[60px] lg:h-[60px] xl:h-[75px] flex items-center gap-2 rounded-full border-2 border-[#0295B0] px-[8px] py-[10px] md:px-[12px] md:gap-3"
               >
                 <div className="flex-shrink-0">
                   <img
                     src={PlayStore}
                     alt="Play Store"
-                    className="w-[22px] h-[22px] lg:w-[36px] lg:h-[36px] xl:w-[40px] xl:h-[40px]"
+                    className="w-[22px] h-[22px] md:w-[30px] md:h-[30px] lg:w-[36px] lg:h-[36px] xl:w-[40px] xl:h-[40px]"
                   />
                 </div>
                 <div className="pr-[10px] md:pr-[16px]">

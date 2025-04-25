@@ -71,7 +71,7 @@ function Header() {
   return (
     <div className="relative">
       <header className="fixed top-0 left-0 right-0 w-full border-b-[3px] border-b-[#0295B0] bg-[#FF7018] h-[5.625rem] flex items-center justify-between font-spartan z-50">
-        <div className="flex items-center">
+        <div className="flex items-center cursor-pointer" onClick={() => scrollToSection('about', 'ABOUT')}>
           <img
             src={Logo}
             alt="Turflo Logo"

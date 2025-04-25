@@ -7,9 +7,9 @@ const Feedback = () => {
   const secondRowItems = FeedbackData.slice(5, 10);
 
   return (
-    <div className="bg-[#1C1C1C] pb-[86px] md:pb-[100px] lg:pb-[107px] px-6 overflow-hidden">
+    <div className="bg-[#1C1C1C] pb-[86px] md:pb-[100px] lg:pb-[107px] overflow-hidden">
       <div className="pt-[79px] md:pt-[109px] lg:pt-[109px] text-center">
-        <h1 className="text-white font-spartan font-bold text-[28px] md:text-[32px] lg:text-[36px] pb-[86px] md:pb-[110px] lg:pb-[125px]">
+        <h1 className="text-white font-spartan font-bold text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] pb-[86px] md:pb-[110px] lg:pb-[125px]">
           Real Moments, Real Players.
         </h1>
       </div>
