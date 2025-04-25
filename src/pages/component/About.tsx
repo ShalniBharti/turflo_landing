@@ -1,4 +1,5 @@
 import HeroImg from '../../../public/turflo1.png';
+import heroImage from '../../../public/turflo2.png';
 import Phone from '../../../public/phone.png';
 import PlayStore from '../../../src/assets/icons/Playstore.png';
 import AppStore from '../../../src/assets/icons/App store.png';
@@ -12,13 +13,22 @@ const About = ({ id }: AboutProps) => {
     <section id={id}>
       <div className="relative w-full flex flex-col items-center md:flex-row md:items-center xl:flex-row xl:justify-center mt-[54px] md:py-[58px] xl:mt-[53px] overflow-hidden pt-[24px]">
         <div className="absolute inset-0 bg-[#000] opacity-50 z-10" />
+        {/* Mobile Background Image */}
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat z-10 md:hidden"
           style={{
-            backgroundImage: `url(${HeroImg})`,
-            backgroundPosition: 'center center'
+            backgroundImage: `url(${heroImage})`,
           }}
         />
+
+        {/* Tablet and Up Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0 hidden md:block"
+          style={{
+            backgroundImage: `url(${HeroImg})`,
+          }}
+        />
+
         <div className="container px-auto flex flex-col items-center md:flex-row md:flex-wrap md:justify-center md:items-center xl:flex-nowrap xl:justify-center xl:items-center xl:max-w-7xl z-20 md:pr-[100px] lg:pr-[150px]">
           <div className="text-[#FFFFFF] mt-[54px] md:mt-[50px] xl:mt-0 text-center mx-auto md:text-right md:mr-[66px] md:flex-1 xl:mr-[75px]">
             <h1 className="text-[48px] font-gothic mb-[22px] lg:mb-[16px] xl:pt-[48px] leading-[110%] uppercase
