@@ -1,3 +1,11 @@
+/* globals.css */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
 .scroll-row {
   overflow: hidden;
   width: 100%;

@@ -113,7 +113,7 @@ const Contact = ({ id }: ContactProps) => {
         <footer className="pt-[28px] px-6">
           <div className="container mx-auto">
             {/* Mobile Layout (below 640px) */}
-            <div className="max-w-[340px] mx-auto lg:hidden">
+            <div className="w-[330px] md:w-[400px] mx-auto lg:hidden">
               <h6 className="text-[32px] font-spartan text-center text-[#FF7018] font-semibold mb-4">Contact Us</h6>
               <form onSubmit={handleSubmit}>
                 <div className="mb-4">

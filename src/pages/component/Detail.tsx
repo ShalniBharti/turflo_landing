@@ -40,11 +40,11 @@ const Detail = () => {
                         <div className="absolute inset-0 bg-[#000] opacity-50 z-0" />
                     </div>
 
-                    <div className="absolute top-[50%] xl:top-[60%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-5">
+                    <div className="absolute top-[60%] xl:top-[65%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-5">
                         <div className="bg-[#FF7018] rounded-full w-[90px] h-[90px] flex items-center justify-center sm:w-[100px] sm:h-[100px] md:w-[120px] md:h-[120px]">
                             <img src={Vector} className="w-[76px] h-[76px]" alt="Group Icon" />
                         </div>
-                        <p className="font-bold font-spartan text-2xl text-white text-center">Join a Game</p>
+                        <p className="whitespace-nowrap font-bold font-spartan text-2xl text-white text-center">Join a Game</p>
                     </div>
 
                     {/* Footer - Hidden on small screens, shown on larger */}
@@ -52,9 +52,6 @@ const Detail = () => {
                         <p className="font-normal font-gothic text-[36px] lg:text-[40px] xl:text-[45px] text-center text-[#1E293B]">PLAY EASY</p>
                     </div>
                 </div>
-
-
-
 
                 {/* Card 2 */}
 
@@ -68,11 +65,11 @@ const Detail = () => {
                         <div className="absolute inset-0 bg-[#000] opacity-50 z-0" />
                     </div>
 
-                    <div className="absolute top-[50%] xl:top-[60%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-5">
+                    <div className="absolute top-[60%] xl:top-[65%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-5">
                         <div className="bg-[#FF7018] rounded-full w-[90px] h-[90px] flex items-center justify-center sm:w-[100px] sm:h-[100px] md:w-[120px] md:h-[120px]">
                             <img src={Game} className="w-[76px] h-[76px]" alt="Group Icon" />
                         </div>
-                        <p className="font-bold font-spartan text-2xl text-white text-center">Host a Game</p>
+                        <p className="whitespace-nowrap font-bold font-spartan text-2xl text-white text-center">Host a Game</p>
                     </div>
 
                     {/* Footer - Hidden on small screens, shown on larger */}
@@ -80,8 +77,6 @@ const Detail = () => {
                         <p className="font-normal font-gothic text-[36px] lg:text-[40px] xl:text-[45px] text-center text-[#1E293B]">PLAY OFTEN</p>
                     </div>
                 </div>
-
-
 
                 {/* Card 3 */}
 
@@ -95,11 +90,13 @@ const Detail = () => {
                         <div className="absolute inset-0 bg-[#000] opacity-50 z-0" />
                     </div>
 
-                    <div className="absolute top-[50%] xl:top-[60%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-5">
+                    <div className="absolute top-[60%] xl:top-[65%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-5">
                         <div className="bg-[#FF7018] rounded-full w-[90px] h-[90px] flex items-center justify-center sm:w-[100px] sm:h-[100px] md:w-[120px] md:h-[120px]">
                             <img src={Group} className="w-[76px] h-[76px]" alt="Group Icon" />
                         </div>
-                        <p className="font-bold font-spartan text-2xl text-white text-center">Host a Tournament</p>
+                        <p className="whitespace-nowrap font-bold font-spartan text-2xl text-white text-center">
+                            Host a Tournament
+                        </p>
                     </div>
 
                     {/* Footer - Hidden on small screens, shown on larger */}
