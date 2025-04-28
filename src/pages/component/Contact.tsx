@@ -214,7 +214,135 @@ const Contact = ({ id }: ContactProps) => {
               </div>
             </div>
 
+            {/* Tablet Layout (640px - 1023px) */}
+            <div className="hidden sm:flex lg:hidden flex-row justify-between gap-6 pl-[8%] pt-[60px] pb-[43px]">
+              <div className="w-1/3">
+                <h6 className="text-[20px] font-bold pb-[30px]">Quick Link</h6>
+                <ul className="text-[16px] text-left">
+                  <li className="mb-[29px]"><a href="#" className="hover:text-white">Home</a></li>
+                  <li className="mb-[29px]"><a href="#" className="hover:text-white">About Us</a></li>
+                  <li className="mb-[29px]"><a href="#" className="hover:text-white">FAQ's</a></li>
+                  <li className="mb-[29px]"><a href="#" className="hover:text-white">Contact Us</a></li>
+                </ul>
+              </div>
+              <div className="w-1/3">
+                <h6 className="text-[20px] font-bold pb-[30px]">Other Link</h6>
+                <ul className="text-[16px] text-left">
+                  <li className="mb-[29px]"><a href="#" className="hover:text-white">T&C</a></li>
+                  <li className="mb-[29px]"><a href="#" className="hover:text-white">Privacy Policy</a></li>
+                  <li className="mb-[29px]"><a href="#" className="hover:text-white">Testimonials</a></li>
+                </ul>
+              </div>
+              <div className="w-1/3">
+                <h6 className="text-[16px] font-semibold pb-[19px]">Follow Us :</h6>
+                <div className="flex items-center space-x-4">
+                  <a href="https://www.youtube.com/channel/UCBLVZJzBf4laK-zyWr_twHw" target="_blank" rel="noopener noreferrer">
+                    <img src={Youtube} alt="Twitter" className="h-[32px] w-[32px]" />
+                  </a>
+                  <a href="" target="_blank" rel="noopener noreferrer">
+                    <img src={Facebook} alt="Facebook" className="h-[32px] w-[32px]" />
+                  </a>
+                  <a href="https://www.instagram.com/turflooooo?igsh=MTI3ZDJoYnd1OHJ1ag==" target="_blank" rel="noopener noreferrer">
+                    <img src={Instagram} alt="Instagram" className="h-[32px] w-[32px]" />
+                  </a>
+                  <a href="https://www.linkedin.com/company/turflo/" target="_blank" rel="noopener noreferrer">
+                    <img src={Linkdin} alt="Linkdin" className="h-[32px] w-[32px]" />
+                  </a>
+                </div>
+                <h6 className="text-[16px] font-semibold text-[#FFFFFF] mt-[40px]">Mail :</h6>
+                <p className="text-[14px] font-semibold text-[#FFFFFF] mt-[13px]">support@turflo.in, info@turflo.in</p>
+              </div>
+            </div>
+
             {/* Desktop Layout (1024px and above) */}
+
+            <div className="hidden lg:flex flex-row justify-between gap-0 px-[4%] pb-[46px]">
+              <div className="w-1/3">
+                <div>
+                  <h6 className="text-[24px] font-bold pt-[30px] pb-[30px] pl-0">Quick Link</h6>
+                  <ul className="text-[20px] text-left">
+                    <li className="mb-[29px]"><a href="#" className="hover:text-white">Home</a></li>
+                    <li className="mb-[29px]"><a href="#" className="hover:text-white">About Us</a></li>
+                    <li className="mb-[29px]"><a href="#" className="hover:text-white">FAQ's</a></li>
+                    <li className="mb-[83px]"><a href="#" className="hover:text-white">Contact Us</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+                    <h6 className="text-[18px] font-bold whitespace-nowrap">Follow Us :</h6>
+                    <div className="flex items-center space-x-4 flex-shrink-0">
+                      <a href="https://www.youtube.com/channel/UCBLVZJzBf4laK-zyWr_twHw" target="_blank" rel="noopener noreferrer" className="flex-shrink-0">
+                        <img src={Youtube} alt="Twitter" className="h-[36px] w-[36px]" />
+                      </a>
+                      <a href="" target="_blank" rel="noopener noreferrer" className="flex-shrink-0">
+                        <img src={Facebook} alt="Facebook" className="h-[36px] w-[36px]" />
+                      </a>
+                      <a href="https://www.instagram.com/turflooooo?igsh=MTI3ZDJoYnd1OHJ1ag==" target="_blank" rel="noopener noreferrer" className="flex-shrink-0">
+                        <img src={Instagram} alt="Instagram" className="h-[36px] w-[36px]" />
+                      </a>
+                      <a href="https://www.linkedin.com/company/turflo/" target="_blank" rel="noopener noreferrer" className="flex-shrink-0">
+                        <img src={Linkdin} alt="Linkdin" className="h-[36px] w-[36px]" />
+                      </a>
+                    </div>
+                  </div>
+
+
+                  <div className="flex flex-row items-center gap-2 mt-[36px] sm:mt-[56px] flex-wrap sm:flex-nowrap">
+                    <h6 className="text-[18px] font-bold text-[#FFFFFF] whitespace-nowrap">Mail :</h6>
+                    <p className="text-[16px] sm:text-[18px] text-[#FFFFFF] whitespace-nowrap">support@turflo.in, info@turflo.in</p>
+                  </div>
+                </div>
+              </div>
+              <div className="w-1/3">
+                <h6 className="text-[24px] font-bold pt-[30px] pb-[30px]">Other Link</h6>
+                <ul className="text-[20px] text-left">
+                  <li className="mb-[29px]"><a href="#" className="hover:text-white">T&C</a></li>
+                  <li className="mb-[29px]"><a href="#" className="hover:text-white">Privacy Policy</a></li>
+                  <li className="mb-[29px]"><a href="#" className="hover:text-white">Testimonials</a></li>
+                </ul>
+              </div>
+              <div className="flex flex-col items-center">
+                <h6 className="text-[36px] text-center text-[#FF7018] font-bold mb-4">Contact Us</h6>
+                <form className="flex flex-col items-center">
+                  <div className="mb-4">
+                    <input
+                      type="text"
+                      className="border border-[#9CA3AF] text-[1.125rem] rounded-[10px] h-[50px] w-[356px] py-[15px] px-[27px] text-[#9CA3AF] focus:outline-none focus:border-white"
+                      placeholder="Full Name (Required)"
+                      required
+                    />
+                  </div>
+                  <div className="mb-4">
+                    <input
+                      type="email"
+                      className="border border-[#9CA3AF] text-[1.125rem] rounded-[10px] h-[50px] w-[356px] py-[15px] px-[27px] text-[#9CA3AF] focus:outline-none focus:border-white"
+                      placeholder="Email Address (Required)"
+                      required
+                    />
+                  </div>
+                  <div className="mb-4">
+                    <input
+                      type="tel"
+                      className="border border-[#9CA3AF] text-[1.125rem] rounded-[10px] h-[50px] w-[356px] py-[15px] px-[27px] text-[#9CA3AF] focus:outline-none focus:border-white"
+                      placeholder="Phone Number"
+                    />
+                  </div>
+                  <div className="mb-4">
+                    <textarea
+                      className="border border-[#9CA3AF] text-[1.125rem] rounded-[10px] h-[138px] w-[356px] py-[15px] px-[27px] text-[#9CA3AF] focus:outline-none focus:border-white"
+                      placeholder="Message / Inquiry Details (Required)"
+                      required
+                    ></textarea>
+                  </div>
+                  <button
+                    type="submit"
+                    className="bg-[#FF7018] text-[#FFFFFF] text-center text-[18px] font-medium h-[2.5rem] px-[20px] rounded-[10px] hover:bg-[#e06a00] focus:outline-none focus:ring-2 focus:ring-orange-500"
+                  >
+                    Submit
+                  </button>
+                </form>
+              </div>
+            </div>
 
             {/* Mobile Footer Bottom (below 640px) */}
             <div className="px-[4%] pb-[43px] sm:hidden">
