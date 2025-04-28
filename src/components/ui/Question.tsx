@@ -18,7 +18,7 @@ function Question({ question, answer, className }: QuestionProps) {
     <div
       className={`border-b-1 border-[#FF7018] text-center mx-[25px] sm:mx-[25px] md:mx-[75px] lg:mx-[69px] xl:mx-[222px] 2xl:mx-[222px] ${className || ''}`}
     >
-      <div 
+      <div
         className={`flex justify-between items-center h-[90px] cursor-pointer`}
         onClick={toggleAnswer}
         role="button"

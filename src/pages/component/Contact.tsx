@@ -280,36 +280,52 @@ const Contact = ({ id }: ContactProps) => {
               </div>
               <div className="flex flex-col items-center">
                 <h6 className="text-[36px] text-center text-[#FF7018] font-bold mb-4">Contact Us</h6>
-                <form className="flex flex-col items-center">
+                <form onSubmit={handleSubmit} className="flex flex-col items-center">
                   <div className="mb-4">
                     <input
                       type="text"
-                      className="border border-[#9CA3AF] text-[1.125rem] rounded-[10px] h-[50px] w-[356px] py-[15px] px-[27px] text-[#9CA3AF] focus:outline-none focus:border-white"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
+                      className={`border ${errors.name ? 'border-red-500' : 'border-[#9CA3AF]'} text-[1.125rem] rounded-[10px] h-[50px] w-[356px] py-[15px] px-[27px] text-[#9CA3AF] focus:outline-none focus:border-white`}
                       placeholder="Full Name (Required)"
                       required
                     />
+                    {errors.name && <p className="text-red-500 text-xs mt-1 w-full text-left pl-2">{errors.name}</p>}
                   </div>
                   <div className="mb-4">
                     <input
                       type="email"
-                      className="border border-[#9CA3AF] text-[1.125rem] rounded-[10px] h-[50px] w-[356px] py-[15px] px-[27px] text-[#9CA3AF] focus:outline-none focus:border-white"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      className={`border ${errors.email ? 'border-red-500' : 'border-[#9CA3AF]'} text-[1.125rem] rounded-[10px] h-[50px] w-[356px] py-[15px] px-[27px] text-[#9CA3AF] focus:outline-none focus:border-white`}
                       placeholder="Email Address (Required)"
                       required
                     />
+                    {errors.email && <p className="text-red-500 text-xs mt-1 w-full text-left pl-2">{errors.email}</p>}
                   </div>
                   <div className="mb-4">
                     <input
                       type="tel"
-                      className="border border-[#9CA3AF] text-[1.125rem] rounded-[10px] h-[50px] w-[356px] py-[15px] px-[27px] text-[#9CA3AF] focus:outline-none focus:border-white"
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleChange}
+                      className={`border ${errors.phone ? 'border-red-500' : 'border-[#9CA3AF]'} text-[1.125rem] rounded-[10px] h-[50px] w-[356px] py-[15px] px-[27px] text-[#9CA3AF] focus:outline-none focus:border-white`}
                       placeholder="Phone Number"
                     />
+                    {errors.phone && <p className="text-red-500 text-xs mt-1 w-full text-left pl-2">{errors.phone}</p>}
                   </div>
                   <div className="mb-4">
                     <textarea
-                      className="border border-[#9CA3AF] text-[1.125rem] rounded-[10px] h-[138px] w-[356px] py-[15px] px-[27px] text-[#9CA3AF] focus:outline-none focus:border-white"
+                      name="message"
+                      value={formData.message}
+                      onChange={handleChange}
+                      className={`border ${errors.message ? 'border-red-500' : 'border-[#9CA3AF]'} text-[1.125rem] rounded-[10px] h-[138px] w-[356px] py-[15px] px-[27px] text-[#9CA3AF] focus:outline-none focus:border-white`}
                       placeholder="Message / Inquiry Details (Required)"
                       required
                     ></textarea>
+                    {errors.message && <p className="text-red-500 text-xs mt-1 w-full text-left pl-2">{errors.message}</p>}
                   </div>
                   <button
                     type="submit"
