@@ -1,5 +1,5 @@
 import FeedbackSection from "../../components/ui/Feedback";
-import FeedbackData from "../../../src/data/feedback.json";
+import FeedbackData from '../../data/feedback.json';
 import '../../styles/global.css'
 
 const Feedback = () => {
@@ -19,7 +19,7 @@ const Feedback = () => {
         {/* First Scrolling Row (left to right) */}
         <div className="scroll-row scroll-row-1">
           <div className="scroll-content">
-            {firstRowItems.concat(firstRowItems).map((feedback: { name: string; age: number; sport: string; description: string; rating: string; }, index: unknown) => (
+            {firstRowItems.concat(firstRowItems).map((feedback, index) => (
               <div key={`feedback-1-${index}`} className="feedback-item ml-[30px]">
                 <FeedbackSection
                   name={feedback.name}

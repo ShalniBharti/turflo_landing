@@ -1,24 +1,7 @@
-// {
-//   "compilerOptions": {
-//     "target": "esnext",
-//     "useDefineForClassFields": true,
-//     "module": "esnext",
-//     "moduleResolution": "node",
-//     "resolveJsonModule": true,       // <-- Add this to allow JSON imports
-//     "esModuleInterop": true,          // <-- Add this for better import compatibility
-//     "strict": true,
-//     "jsx": "react-jsx",
-//     "baseUrl": ".",
-//     "paths": {
-//       "@/*": ["./src/*"]
-//     }
-//   },
-//   "include": ["src"]
-// }
-
 {
-  "compilerOptions": {
-    "resolveJsonModule": true,
-    "esModuleInterop": true
-  }
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
 }
