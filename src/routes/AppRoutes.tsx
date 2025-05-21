@@ -9,7 +9,7 @@ const AppRoutes = () => {
         <Routes>
             <Route path="/" element={<LandingPage />} />
             <Route path="/landingPage" element={<LandingPage />} />
-            <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+            <Route path="/terms_and_conditions" element={<TermsAndConditions />} />
             <Route path="/privacy_policy" element={<PrivacyPolicy />} />
         </Routes>
     );
