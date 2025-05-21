@@ -205,7 +205,7 @@ const Contact = ({ id }: ContactProps) => {
                 <h6 className="text-[20px] font-bold pb-[30px]">Other Link</h6>
                 <ul className="text-[16px] text-left">
                   <li className="mb-[29px]"><Link to="/terms-and-conditions" className="hover:text-white">T&C</Link></li>
-                  <li className="mb-[29px]"><Link to="/privacy-policy" className="hover:text-white">Privacy Policy</Link></li>
+                  <li className="mb-[29px]"><Link to="/privacy_policy" className="hover:text-white">Privacy Policy</Link></li>
                   <li className="mb-[29px]"><a href="#" className="hover:text-white">Testimonials</a></li>
                 </ul>
               </div>
@@ -226,7 +226,7 @@ const Contact = ({ id }: ContactProps) => {
                 <h6 className="text-[20px] font-bold pb-[30px]">Other Link</h6>
                 <ul className="text-[16px] text-left">
                   <li className="mb-[29px]"><Link to="/terms-and-conditions" className="hover:text-white">T&C</Link></li>
-                  <li className="mb-[29px]"><Link to="/privacy-policy" className="hover:text-white">Privacy Policy</Link></li>
+                  <li className="mb-[29px]"><Link to="/privacy_policy" className="hover:text-white">Privacy Policy</Link></li>
                   <li className="mb-[29px]"><a href="#" className="hover:text-white">Testimonials</a></li>
                 </ul>
               </div>
@@ -294,7 +294,7 @@ const Contact = ({ id }: ContactProps) => {
                 <h6 className="text-[24px] font-bold pt-[30px] pb-[30px]">Other Link</h6>
                 <ul className="text-[20px] text-left">
                   <li className="mb-[29px]"><Link to="/terms-and-conditions" className="hover:text-white">T&C</Link></li>
-                  <li className="mb-[29px]"><Link to="/privacy-policy" className="hover:text-white">Privacy Policy</Link></li>
+                  <li className="mb-[29px]"><Link to="/privacy_policy" className="hover:text-white">Privacy Policy</Link></li>
                   <li className="mb-[29px]"><a href="#" className="hover:text-white">Testimonials</a></li>
                 </ul>
               </div>
